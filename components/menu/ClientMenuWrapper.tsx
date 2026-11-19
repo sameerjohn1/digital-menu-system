@@ -22,7 +22,9 @@ interface ClientMenuWrapperProps {
 
 export function ClientMenuWrapper({ restaurant }: ClientMenuWrapperProps) {
   const searchParams = useSearchParams();
-  const tableParam = searchParams.get("table") || undefined;
+  const rawTableParam = searchParams.get("table");
+  const tableParam =
+    rawTableParam && /^\d+$/.test(rawTableParam) ? rawTableParam : undefined;
 
   const [lang, setLang] = useState<Language>("en");
   const [activeCategoryId, setActiveCategoryId] = useState<string>(
@@ -34,11 +36,8 @@ export function ClientMenuWrapper({ restaurant }: ClientMenuWrapperProps) {
 
   const setTableNumber = useCartStore((state) => state.setTableNumber);
 
-  // Set table number in cart if URL has ?table=5
   useEffect(() => {
-    if (tableParam) {
-      setTableNumber(restaurant.slug, tableParam);
-    }
+    setTableNumber(restaurant.slug, tableParam ?? "");
   }, [tableParam, restaurant.slug, setTableNumber]);
 
   // Scroll spy to detect active category

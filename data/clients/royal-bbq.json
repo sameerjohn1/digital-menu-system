@@ -8,6 +8,10 @@
     "en": "Traditional charcoal grills, smoky skewers, handis & royal clay-oven karahis.",
     "ur": "روایتی کوئلہ کڑاہی، سجی، ملائی بوٹی اور شاہی مٹن کڑاہی"
   },
+  "description": {
+    "en": "A charcoal-fired grill house specializing in smoky kababs, desi ghee karahis, dum biryani, and fresh tandoori breads.",
+    "ur": "کوئلے پر پکائی جانے والی دھواں دار کباب، دیسی گھی کی کڑاہی، دم بریانی اور تازہ تندوری روٹیوں کا روایتی گرل ہاؤس۔"
+  },
   "whatsappNumber": "923008889911",
   "currency": {
     "code": "PKR",
@@ -55,7 +59,7 @@
     },
     "code": "ROYALBBQ"
   },
-  "tablesCount": 12,
+  "tables": [1, 2, 3],
   "categories": [
     {
       "id": "bbq-grill",

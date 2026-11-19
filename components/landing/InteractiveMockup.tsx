@@ -80,7 +80,7 @@ export function InteractiveMockup() {
             One Platform, Unlimited Businesses
           </h2>
           <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 mt-3">
-            Each business gets its own independent URL, visual brand identity, opening hours, WhatsApp kitchen line, and table QR codes.
+            Each business gets its own independent URL, visual brand identity, opening hours, WhatsApp kitchen line, and one dedicated QR code.
           </p>
 
           {/* Business Switcher Pills */}
@@ -273,7 +273,7 @@ export function InteractiveMockup() {
               className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline"
             >
               <QrCode className="w-3.5 h-3.5" />
-              <span>View All Downloadable Table QRs</span>
+              <span>View All Downloadable QR Codes</span>
             </Link>
           </div>
         </div>

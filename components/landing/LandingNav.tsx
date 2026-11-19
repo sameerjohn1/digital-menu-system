@@ -30,13 +30,13 @@ export function LandingNav() {
             <span className="hidden md:inline">QR Codes</span>
           </Link>
 
-          <a
+          <Link
             href="/#qr-scanner"
             className="hidden sm:flex items-center gap-1.5 text-xs sm:text-sm font-bold text-zinc-700 dark:text-zinc-300 hover:text-[#C8553D] dark:hover:text-[#D4A24C] transition-colors"
           >
             <ScanLine className="w-3.5 h-3.5 text-[#C8553D]" />
             <span>Scanner</span>
-          </a>
+          </Link>
 
           <Link
             href="/menu/demo-cafe"

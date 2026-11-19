@@ -54,6 +54,12 @@ export function RestaurantFooter({ restaurant, lang }: RestaurantFooterProps) {
           >
             {restaurant.tagline[lang]}
           </p>
+          <p
+            className="text-xs leading-relaxed"
+            style={{ color: restaurant.theme.textMuted }}
+          >
+            {restaurant.description[lang]}
+          </p>
         </div>
 
         {/* Details Grid */}

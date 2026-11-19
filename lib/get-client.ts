@@ -1,44 +1,50 @@
+import fs from "node:fs";
+import path from "node:path";
 import { RestaurantConfig, RestaurantConfigSchema } from "./menu-schema";
-import demoCafeData from "@/data/clients/demo-cafe.json";
-import royalBbqData from "@/data/clients/royal-bbq.json";
-import firestonePizzaData from "@/data/clients/firestone-pizza.json";
-import darkBistroData from "@/data/clients/dark-bistro.json";
 
-const clientsRegistry: Record<string, unknown> = {
-  "demo-cafe": demoCafeData,
-  "royal-bbq": royalBbqData,
-  "firestone-pizza": firestonePizzaData,
-  "dark-bistro": darkBistroData,
-};
-
-export function getAllClientSlugs(): string[] {
-  return Object.keys(clientsRegistry);
-}
+const clientsDir = path.join(process.cwd(), "data", "clients");
 
 export function getAllClients(): RestaurantConfig[] {
-  return Object.entries(clientsRegistry)
-    .map(([slug, rawData]) => {
-      const result = RestaurantConfigSchema.safeParse(rawData);
-      if (!result.success) {
-        console.error(`[Zod Error in getAllClients] ${slug}:`, result.error.format());
-        return null;
+  if (!fs.existsSync(clientsDir)) {
+    return [];
+  }
+
+  return fs
+    .readdirSync(clientsDir)
+    .filter((file) => file.endsWith(".json"))
+    .sort()
+    .flatMap((file) => {
+      const filePath = path.join(clientsDir, file);
+
+      try {
+        const rawData: unknown = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        const result = RestaurantConfigSchema.safeParse(rawData);
+
+        if (!result.success) {
+          console.error(`[Config Error] Invalid business configuration in ${file}:`, result.error.format());
+          return [];
+        }
+
+        const expectedSlug = path.basename(file, ".json");
+        if (result.data.slug !== expectedSlug) {
+          console.error(
+            `[Config Error] ${file} declares slug "${result.data.slug}" but the filename expects "${expectedSlug}".`
+          );
+          return [];
+        }
+
+        return [result.data];
+      } catch (error) {
+        console.error(`[Config Error] Could not load ${file}:`, error);
+        return [];
       }
-      return result.data;
-    })
-    .filter((c): c is RestaurantConfig => c !== null);
+    });
+}
+
+export function getAllClientSlugs(): string[] {
+  return getAllClients().map((client) => client.slug);
 }
 
 export function getClientConfig(slug: string): RestaurantConfig | null {
-  const rawData = clientsRegistry[slug];
-  if (!rawData) {
-    return null;
-  }
-
-  const result = RestaurantConfigSchema.safeParse(rawData);
-  if (!result.success) {
-    console.error(`[Zod Validation Error] Invalid configuration for client "${slug}":`, result.error.format());
-    return null;
-  }
-
-  return result.data;
+  return getAllClients().find((client) => client.slug === slug) ?? null;
 }

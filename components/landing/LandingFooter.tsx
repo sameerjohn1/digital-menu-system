@@ -25,7 +25,7 @@ export function LandingFooter() {
             Firestone Pizza House
           </Link>
           <Link href="/qr-codes" className="font-bold text-emerald-600 dark:text-emerald-400 hover:underline">
-            Table QR Gallery
+            Platform QR Gallery
           </Link>
           <a
             href="https://wa.me/923001234567"

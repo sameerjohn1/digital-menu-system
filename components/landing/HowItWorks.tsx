@@ -5,8 +5,8 @@ export function HowItWorks() {
     {
       step: "01",
       icon: QrCode,
-      title: "1. Customer Scans Table QR",
-      desc: "Each dining table gets a laminated, branded QR code. Guests simply scan with their native smartphone camera—no app download required.",
+      title: "1. Customer Scans Platform QR",
+      desc: "Each platform gets one laminated, branded QR code linked to its own menu. Guests simply scan with their native smartphone camera—no app download required.",
     },
     {
       step: "02",
@@ -18,7 +18,7 @@ export function HowItWorks() {
       step: "03",
       icon: MessageSquareCode,
       title: "3. Order Lands on WhatsApp",
-      desc: "With one tap, the full order—including Table #, items, variants, special instructions, and total sum—opens directly in your kitchen's WhatsApp.",
+      desc: "With one tap, the full order—including items, variants, special instructions, and total sum—opens directly in your kitchen's WhatsApp.",
     },
   ];
 

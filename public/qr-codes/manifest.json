@@ -1,0 +1,282 @@
+[
+  {
+    "slug": "dark-bistro",
+    "name": "Nocturne Grill & Prime Bistro",
+    "whatsappNumber": "923009876543",
+    "mainUrl": "https://animated-menu.pages.dev/menu/dark-bistro",
+    "mainSvg": "/qr-codes/dark-bistro/main-menu.svg",
+    "mainPng": "/qr-codes/dark-bistro/main-menu.png",
+    "tables": [
+      {
+        "tableNumber": 1,
+        "url": "https://animated-menu.pages.dev/menu/dark-bistro?table=1",
+        "svg": "/qr-codes/dark-bistro/table-1.svg",
+        "png": "/qr-codes/dark-bistro/table-1.png"
+      },
+      {
+        "tableNumber": 2,
+        "url": "https://animated-menu.pages.dev/menu/dark-bistro?table=2",
+        "svg": "/qr-codes/dark-bistro/table-2.svg",
+        "png": "/qr-codes/dark-bistro/table-2.png"
+      },
+      {
+        "tableNumber": 3,
+        "url": "https://animated-menu.pages.dev/menu/dark-bistro?table=3",
+        "svg": "/qr-codes/dark-bistro/table-3.svg",
+        "png": "/qr-codes/dark-bistro/table-3.png"
+      },
+      {
+        "tableNumber": 4,
+        "url": "https://animated-menu.pages.dev/menu/dark-bistro?table=4",
+        "svg": "/qr-codes/dark-bistro/table-4.svg",
+        "png": "/qr-codes/dark-bistro/table-4.png"
+      },
+      {
+        "tableNumber": 5,
+        "url": "https://animated-menu.pages.dev/menu/dark-bistro?table=5",
+        "svg": "/qr-codes/dark-bistro/table-5.svg",
+        "png": "/qr-codes/dark-bistro/table-5.png"
+      },
+      {
+        "tableNumber": 6,
+        "url": "https://animated-menu.pages.dev/menu/dark-bistro?table=6",
+        "svg": "/qr-codes/dark-bistro/table-6.svg",
+        "png": "/qr-codes/dark-bistro/table-6.png"
+      },
+      {
+        "tableNumber": 7,
+        "url": "https://animated-menu.pages.dev/menu/dark-bistro?table=7",
+        "svg": "/qr-codes/dark-bistro/table-7.svg",
+        "png": "/qr-codes/dark-bistro/table-7.png"
+      },
+      {
+        "tableNumber": 8,
+        "url": "https://animated-menu.pages.dev/menu/dark-bistro?table=8",
+        "svg": "/qr-codes/dark-bistro/table-8.svg",
+        "png": "/qr-codes/dark-bistro/table-8.png"
+      },
+      {
+        "tableNumber": 9,
+        "url": "https://animated-menu.pages.dev/menu/dark-bistro?table=9",
+        "svg": "/qr-codes/dark-bistro/table-9.svg",
+        "png": "/qr-codes/dark-bistro/table-9.png"
+      },
+      {
+        "tableNumber": 10,
+        "url": "https://animated-menu.pages.dev/menu/dark-bistro?table=10",
+        "svg": "/qr-codes/dark-bistro/table-10.svg",
+        "png": "/qr-codes/dark-bistro/table-10.png"
+      }
+    ]
+  },
+  {
+    "slug": "demo-cafe",
+    "name": "The Artisan Roast Café & Bakery",
+    "whatsappNumber": "923001234567",
+    "mainUrl": "https://animated-menu.pages.dev/menu/demo-cafe",
+    "mainSvg": "/qr-codes/demo-cafe/main-menu.svg",
+    "mainPng": "/qr-codes/demo-cafe/main-menu.png",
+    "tables": [
+      {
+        "tableNumber": 1,
+        "url": "https://animated-menu.pages.dev/menu/demo-cafe?table=1",
+        "svg": "/qr-codes/demo-cafe/table-1.svg",
+        "png": "/qr-codes/demo-cafe/table-1.png"
+      },
+      {
+        "tableNumber": 2,
+        "url": "https://animated-menu.pages.dev/menu/demo-cafe?table=2",
+        "svg": "/qr-codes/demo-cafe/table-2.svg",
+        "png": "/qr-codes/demo-cafe/table-2.png"
+      },
+      {
+        "tableNumber": 3,
+        "url": "https://animated-menu.pages.dev/menu/demo-cafe?table=3",
+        "svg": "/qr-codes/demo-cafe/table-3.svg",
+        "png": "/qr-codes/demo-cafe/table-3.png"
+      },
+      {
+        "tableNumber": 4,
+        "url": "https://animated-menu.pages.dev/menu/demo-cafe?table=4",
+        "svg": "/qr-codes/demo-cafe/table-4.svg",
+        "png": "/qr-codes/demo-cafe/table-4.png"
+      },
+      {
+        "tableNumber": 5,
+        "url": "https://animated-menu.pages.dev/menu/demo-cafe?table=5",
+        "svg": "/qr-codes/demo-cafe/table-5.svg",
+        "png": "/qr-codes/demo-cafe/table-5.png"
+      },
+      {
+        "tableNumber": 6,
+        "url": "https://animated-menu.pages.dev/menu/demo-cafe?table=6",
+        "svg": "/qr-codes/demo-cafe/table-6.svg",
+        "png": "/qr-codes/demo-cafe/table-6.png"
+      },
+      {
+        "tableNumber": 7,
+        "url": "https://animated-menu.pages.dev/menu/demo-cafe?table=7",
+        "svg": "/qr-codes/demo-cafe/table-7.svg",
+        "png": "/qr-codes/demo-cafe/table-7.png"
+      },
+      {
+        "tableNumber": 8,
+        "url": "https://animated-menu.pages.dev/menu/demo-cafe?table=8",
+        "svg": "/qr-codes/demo-cafe/table-8.svg",
+        "png": "/qr-codes/demo-cafe/table-8.png"
+      },
+      {
+        "tableNumber": 9,
+        "url": "https://animated-menu.pages.dev/menu/demo-cafe?table=9",
+        "svg": "/qr-codes/demo-cafe/table-9.svg",
+        "png": "/qr-codes/demo-cafe/table-9.png"
+      },
+      {
+        "tableNumber": 10,
+        "url": "https://animated-menu.pages.dev/menu/demo-cafe?table=10",
+        "svg": "/qr-codes/demo-cafe/table-10.svg",
+        "png": "/qr-codes/demo-cafe/table-10.png"
+      }
+    ]
+  },
+  {
+    "slug": "firestone-pizza",
+    "name": "Firestone Pizza House",
+    "whatsappNumber": "923007773322",
+    "mainUrl": "https://animated-menu.pages.dev/menu/firestone-pizza",
+    "mainSvg": "/qr-codes/firestone-pizza/main-menu.svg",
+    "mainPng": "/qr-codes/firestone-pizza/main-menu.png",
+    "tables": [
+      {
+        "tableNumber": 1,
+        "url": "https://animated-menu.pages.dev/menu/firestone-pizza?table=1",
+        "svg": "/qr-codes/firestone-pizza/table-1.svg",
+        "png": "/qr-codes/firestone-pizza/table-1.png"
+      },
+      {
+        "tableNumber": 2,
+        "url": "https://animated-menu.pages.dev/menu/firestone-pizza?table=2",
+        "svg": "/qr-codes/firestone-pizza/table-2.svg",
+        "png": "/qr-codes/firestone-pizza/table-2.png"
+      },
+      {
+        "tableNumber": 3,
+        "url": "https://animated-menu.pages.dev/menu/firestone-pizza?table=3",
+        "svg": "/qr-codes/firestone-pizza/table-3.svg",
+        "png": "/qr-codes/firestone-pizza/table-3.png"
+      },
+      {
+        "tableNumber": 4,
+        "url": "https://animated-menu.pages.dev/menu/firestone-pizza?table=4",
+        "svg": "/qr-codes/firestone-pizza/table-4.svg",
+        "png": "/qr-codes/firestone-pizza/table-4.png"
+      },
+      {
+        "tableNumber": 5,
+        "url": "https://animated-menu.pages.dev/menu/firestone-pizza?table=5",
+        "svg": "/qr-codes/firestone-pizza/table-5.svg",
+        "png": "/qr-codes/firestone-pizza/table-5.png"
+      },
+      {
+        "tableNumber": 6,
+        "url": "https://animated-menu.pages.dev/menu/firestone-pizza?table=6",
+        "svg": "/qr-codes/firestone-pizza/table-6.svg",
+        "png": "/qr-codes/firestone-pizza/table-6.png"
+      },
+      {
+        "tableNumber": 7,
+        "url": "https://animated-menu.pages.dev/menu/firestone-pizza?table=7",
+        "svg": "/qr-codes/firestone-pizza/table-7.svg",
+        "png": "/qr-codes/firestone-pizza/table-7.png"
+      },
+      {
+        "tableNumber": 8,
+        "url": "https://animated-menu.pages.dev/menu/firestone-pizza?table=8",
+        "svg": "/qr-codes/firestone-pizza/table-8.svg",
+        "png": "/qr-codes/firestone-pizza/table-8.png"
+      }
+    ]
+  },
+  {
+    "slug": "royal-bbq",
+    "name": "Royal BBQ House",
+    "whatsappNumber": "923008889911",
+    "mainUrl": "https://animated-menu.pages.dev/menu/royal-bbq",
+    "mainSvg": "/qr-codes/royal-bbq/main-menu.svg",
+    "mainPng": "/qr-codes/royal-bbq/main-menu.png",
+    "tables": [
+      {
+        "tableNumber": 1,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=1",
+        "svg": "/qr-codes/royal-bbq/table-1.svg",
+        "png": "/qr-codes/royal-bbq/table-1.png"
+      },
+      {
+        "tableNumber": 2,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=2",
+        "svg": "/qr-codes/royal-bbq/table-2.svg",
+        "png": "/qr-codes/royal-bbq/table-2.png"
+      },
+      {
+        "tableNumber": 3,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=3",
+        "svg": "/qr-codes/royal-bbq/table-3.svg",
+        "png": "/qr-codes/royal-bbq/table-3.png"
+      },
+      {
+        "tableNumber": 4,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=4",
+        "svg": "/qr-codes/royal-bbq/table-4.svg",
+        "png": "/qr-codes/royal-bbq/table-4.png"
+      },
+      {
+        "tableNumber": 5,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=5",
+        "svg": "/qr-codes/royal-bbq/table-5.svg",
+        "png": "/qr-codes/royal-bbq/table-5.png"
+      },
+      {
+        "tableNumber": 6,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=6",
+        "svg": "/qr-codes/royal-bbq/table-6.svg",
+        "png": "/qr-codes/royal-bbq/table-6.png"
+      },
+      {
+        "tableNumber": 7,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=7",
+        "svg": "/qr-codes/royal-bbq/table-7.svg",
+        "png": "/qr-codes/royal-bbq/table-7.png"
+      },
+      {
+        "tableNumber": 8,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=8",
+        "svg": "/qr-codes/royal-bbq/table-8.svg",
+        "png": "/qr-codes/royal-bbq/table-8.png"
+      },
+      {
+        "tableNumber": 9,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=9",
+        "svg": "/qr-codes/royal-bbq/table-9.svg",
+        "png": "/qr-codes/royal-bbq/table-9.png"
+      },
+      {
+        "tableNumber": 10,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=10",
+        "svg": "/qr-codes/royal-bbq/table-10.svg",
+        "png": "/qr-codes/royal-bbq/table-10.png"
+      },
+      {
+        "tableNumber": 11,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=11",
+        "svg": "/qr-codes/royal-bbq/table-11.svg",
+        "png": "/qr-codes/royal-bbq/table-11.png"
+      },
+      {
+        "tableNumber": 12,
+        "url": "https://animated-menu.pages.dev/menu/royal-bbq?table=12",
+        "svg": "/qr-codes/royal-bbq/table-12.svg",
+        "png": "/qr-codes/royal-bbq/table-12.png"
+      }
+    ]
+  }
+]

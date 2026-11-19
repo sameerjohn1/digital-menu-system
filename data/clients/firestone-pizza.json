@@ -1,0 +1,271 @@
+{
+  "slug": "firestone-pizza",
+  "name": {
+    "en": "Firestone Pizza House",
+    "ur": "فائر اسٹون پیزا ہاؤس"
+  },
+  "tagline": {
+    "en": "Authentic wood-fired Neapolitan crusts, bubbling mozzarella & artisan pasta.",
+    "ur": "لکڑی کے تندور کا اطالوی نیپولیٹن پیزا، پاستا اور تازہ چیز"
+  },
+  "whatsappNumber": "923007773322",
+  "currency": {
+    "code": "PKR",
+    "symbol": "Rs",
+    "symbolUr": "روپے"
+  },
+  "logo": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=200&h=200&q=80",
+  "coverImage": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&h=500&q=80",
+  "theme": {
+    "primary": "#D9531E",
+    "primaryHover": "#B84010",
+    "accent": "#4A6B53",
+    "background": "#FBF7EE",
+    "surface": "#FFFFFF",
+    "text": "#1C1917",
+    "textMuted": "#78716C",
+    "cardBg": "#FFFFFF",
+    "border": "#E7DFD5",
+    "mode": "light",
+    "fontHeading": "Playfair Display, serif"
+  },
+  "openingHours": {
+    "days": {
+      "en": "Tuesday - Sunday (Lunch & Dinner)",
+      "ur": "منگل تا اتوار (دوپہر اور رات کا کھانا)"
+    },
+    "open": "12:00",
+    "close": "00:00"
+  },
+  "address": {
+    "en": "Shop 4, Block 5, Clifton, Karachi, Pakistan",
+    "ur": "دکان 4، بلاک 5، کلفٹن، کراچی، پاکستان"
+  },
+  "googleMapsUrl": "https://maps.google.com/?q=Clifton+Block+5+Karachi",
+  "socialLinks": {
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "website": "https://firestonepizza.pk"
+  },
+  "promoBanner": {
+    "active": true,
+    "text": {
+      "en": "🍕 20% OFF Wood-Fired Large Pizzas on Weekdays! Mention FIRESTONE20",
+      "ur": "🍕 ہفتے کے عام دنوں میں تمام بڑے پیزوں پر 20 فیصد رعایت! کوڈ FIRESTONE20 بتائیں"
+    },
+    "code": "FIRESTONE20"
+  },
+  "tablesCount": 8,
+  "categories": [
+    {
+      "id": "woodfired-pizzas",
+      "name": {
+        "en": "Wood-Fired Neapolitan Pizzas",
+        "ur": "لکڑی کے تندور کے پیزے"
+      },
+      "icon": "Flame"
+    },
+    {
+      "id": "calzones-paninis",
+      "name": {
+        "en": "Stuffed Calzones & Breads",
+        "ur": "سٹفڈ کیلزون اور گارلک بریڈ"
+      },
+      "icon": "Sandwich"
+    },
+    {
+      "id": "fresh-pasta",
+      "name": {
+        "en": "Artisan Hand-Rolled Pasta",
+        "ur": "اطالوی پاستا"
+      },
+      "icon": "Utensils"
+    },
+    {
+      "id": "appetizers",
+      "name": {
+        "en": "Italian Starters",
+        "ur": "ایپی ٹائزرز اور سٹارٹرز"
+      },
+      "icon": "Sparkles"
+    },
+    {
+      "id": "beverages-desserts",
+      "name": {
+        "en": "Gelato, Drinks & Dolci",
+        "ur": "اطالوی جیلاٹو اور مشروبات"
+      },
+      "icon": "GlassWater"
+    }
+  ],
+  "items": [
+    {
+      "id": "margherita-dop",
+      "categoryId": "woodfired-pizzas",
+      "name": {
+        "en": "Classic Margherita D.O.P",
+        "ur": "کلاسک مارگریٹا پیزا"
+      },
+      "description": {
+        "en": "San Marzano tomato sauce, fresh Fior di Latte mozzarella, sweet garden basil, and extra virgin olive oil on 48-hour fermented crust.",
+        "ur": "سان مارزانو ٹماٹر ساس، تازہ اطالوی موزریلا چیز اور بیزل 48 گھنٹے خمیر شدہ کرسٹ پر"
+      },
+      "price": 1450,
+      "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "isVeg": true,
+      "variants": [
+        { "id": "medium-10", "name": { "en": "10-inch Medium (6 Slices)", "ur": "10 انچ میڈیم (6 سلائس)" }, "price": 1450 },
+        { "id": "large-14", "name": { "en": "14-inch Large (8 Slices)", "ur": "14 انچ لارج (8 سلائس)" }, "price": 2150 }
+      ],
+      "addOns": [
+        { "id": "extra-cheese", "name": { "en": "Extra Buffalo Mozzarella", "ur": "اضافی بفلو موزریلا چیز" }, "price": 280 },
+        { "id": "garlic-butter-crust", "name": { "en": "Garlic Herb Butter Crust", "ur": "گارلک ہرب بٹر کرسٹ" }, "price": 150 }
+      ]
+    },
+    {
+      "id": "pepperoni-di-fuego",
+      "categoryId": "woodfired-pizzas",
+      "name": {
+        "en": "Diavola Beef Pepperoni",
+        "ur": "ڈیاوولا بیف پیپرونی پیزا"
+      },
+      "description": {
+        "en": "Spicy artisanal beef pepperoni, crushed red chilies, molten mozzarella, and spicy hot honey drizzle over wood-charred crust.",
+        "ur": "اسپائسی بیف پیپرونی، چلی فلیکس، پگھلا ہوا پنیر اور ہاٹ ہنی کا شاندار تڑکا"
+      },
+      "price": 1750,
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "isSpicy": true,
+      "variants": [
+        { "id": "medium-10", "name": { "en": "10-inch Medium", "ur": "10 انچ میڈیم" }, "price": 1750 },
+        { "id": "large-14", "name": { "en": "14-inch Large", "ur": "14 انچ لارج" }, "price": 2550 }
+      ],
+      "addOns": [
+        { "id": "stuffed-crust", "name": { "en": "Cheese Stuffed Crust", "ur": "چیز سٹفڈ کرسٹ" }, "price": 350 },
+        { "id": "jalapenos", "name": { "en": "Fire Pickled Jalapeños", "ur": "ہلاپینو مرچ" }, "price": 120 }
+      ]
+    },
+    {
+      "id": "truffle-burrata-pizza",
+      "categoryId": "woodfired-pizzas",
+      "name": {
+        "en": "Truffle & Burrata Bianco",
+        "ur": "ٹرفل اینڈ بوراٹا وائٹ پیزا"
+      },
+      "description": {
+        "en": "White cream base, wild sautéed porcini mushrooms, black truffle carpaccio, and whole molten Pugliese burrata ball placed in the center.",
+        "ur": "سفید کریمی بیس، پورچینی مشرومز، بلیک ٹرفل اور درمیان میں تازہ اطالوی بوراٹا چیز"
+      },
+      "price": 2450,
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&h=450&q=80",
+      "isNew": true,
+      "isVeg": true,
+      "variants": [
+        { "id": "standard-12", "name": { "en": "12-inch Artisan Chef Size", "ur": "12 انچ شیف اسپیشل" }, "price": 2450 }
+      ],
+      "addOns": [
+        { "id": "truffle-oil", "name": { "en": "Extra Black Truffle Oil Drizzle", "ur": "ٹرفل آئل شیرہ" }, "price": 250 }
+      ]
+    },
+    {
+      "id": "bbq-smokehouse-chicken-pizza",
+      "categoryId": "woodfired-pizzas",
+      "name": {
+        "en": "Firestone Smoked Chicken Pizza",
+        "ur": "فائر اسٹون سموکڈ چکن پیزا"
+      },
+      "description": {
+        "en": "Wood-smoked BBQ chicken breast, red onions, charred corn, sweet bell peppers, smoked gouda, and fresh cilantro.",
+        "ur": "کوئلے کا سموکڈ چکن، گلیزڈ پیاز، سویٹ کارن اور گودا پنیر"
+      },
+      "price": 1650,
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "variants": [
+        { "id": "med-10", "name": { "en": "10-inch Medium", "ur": "10 انچ میڈیم" }, "price": 1650 },
+        { "id": "large-14", "name": { "en": "14-inch Large", "ur": "14 انچ لارج" }, "price": 2390 }
+      ]
+    },
+    {
+      "id": "four-cheese-calzone",
+      "categoryId": "calzones-paninis",
+      "name": {
+        "en": "Folded Meat & Four-Cheese Calzone",
+        "ur": "سٹفڈ فور چیز اینڈ میٹ کیلزون"
+      },
+      "description": {
+        "en": "Folded pizza pocket stuffed with ricotta, parmesan, mozzarella, provolone, spiced minced beef, and basil marinara dip on the side.",
+        "ur": "چار اقسام کے پنیر اور قیمے سے بھرا ہوا تندوری کیلزون، میرینارا ساس کے ساتھ"
+      },
+      "price": 1350,
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true
+    },
+    {
+      "id": "parmesan-garlic-knots",
+      "categoryId": "appetizers",
+      "name": {
+        "en": "Cheesy Garlic Herb Dough Knots (6 pcs)",
+        "ur": "چیز گارلک ناٹس (6 عدد)"
+      },
+      "description": {
+        "en": "Oven-fresh braided dough knots soaked in garlic herb butter, dusted with aged Parmigiano-Reggiano. Served with warm marinara.",
+        "ur": "تازہ تندوری گارلک ناٹس مع پامیزان پنیر اور گرم ٹماٹر چٹنی"
+      },
+      "price": 580,
+      "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&h=450&q=80",
+      "isVeg": true
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "categoryId": "fresh-pasta",
+      "name": {
+        "en": "Truffled Fettuccine Alfredo",
+        "ur": "ٹرفل فیٹوچینی الفریڈو پاستا"
+      },
+      "description": {
+        "en": "Fresh egg pasta ribbons tossed in velvet heavy cream, cultured butter, 24-month parmesan, and grilled chicken breast.",
+        "ur": "تازہ ایگ پاستا، کریمی الفریڈو ساس، مکھن اور بھنے ہوئے چکن کے ٹکڑے"
+      },
+      "price": 1490,
+      "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "addOns": [
+        { "id": "extra-chicken", "name": { "en": "Grilled Herb Chicken Cutlet", "ur": "اضافی گرلڈ چکن" }, "price": 280 },
+        { "id": "mushrooms", "name": { "en": "Sautéed Wild Mushrooms", "ur": "بھنے ہوئے مشروم" }, "price": 190 }
+      ]
+    },
+    {
+      "id": "sicilian-lemonade",
+      "categoryId": "beverages-desserts",
+      "name": {
+        "en": "Sparkling Sicilian Mint Lemonade",
+        "ur": "سسلیئن منٹ لیمونیڈ"
+      },
+      "description": {
+        "en": "Cold-pressed lemons, fresh garden mint sprigs, and sparkling soda over crushed ice.",
+        "ur": "تازہ لیموں، پودینہ اور چمکدار سوڈا واٹر"
+      },
+      "price": 420,
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=450&q=80",
+      "isVeg": true
+    },
+    {
+      "id": "classic-tiramisu",
+      "categoryId": "beverages-desserts",
+      "name": {
+        "en": "Authentic Espresso Tiramisù",
+        "ur": "اطالوی ایسپریسو تیرامیسو"
+      },
+      "description": {
+        "en": "Savoiardi ladyfingers soaked in single-origin espresso, layered with whipped mascarpone cream and dusted with Valrhona cocoa.",
+        "ur": "ایسپریسو کافی میں ڈوبی لیڈی فنگر بسکٹ اور مسکارپون کریم کا شاہکار ڈیزرٹ"
+      },
+      "price": 750,
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true
+    }
+  ]
+}

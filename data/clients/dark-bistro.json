@@ -1,0 +1,289 @@
+{
+  "slug": "dark-bistro",
+  "name": {
+    "en": "Nocturne Grill & Prime Bistro",
+    "ur": "نوکٹرن گرل اینڈ پرائم بسٹرو"
+  },
+  "tagline": {
+    "en": "Prime dry-aged steaks, artisan smash burgers & handcrafted cocktails.",
+    "ur": "عمدہ ڈرائی ایجڈ اسٹیکس، لذیذ اسمیش برگر اور خاص ڈرنکس"
+  },
+  "whatsappNumber": "923009876543",
+  "currency": {
+    "code": "PKR",
+    "symbol": "Rs",
+    "symbolUr": "روپے"
+  },
+  "logo": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=200&h=200&q=80",
+  "coverImage": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&h=500&q=80",
+  "theme": {
+    "primary": "#D4A24C",
+    "primaryHover": "#B88939",
+    "accent": "#F5C26B",
+    "background": "#121212",
+    "surface": "#1E1E1E",
+    "text": "#F5F1E8",
+    "textMuted": "#9CA3AF",
+    "cardBg": "#1A1A1A",
+    "border": "#2E2E2E",
+    "mode": "dark",
+    "fontHeading": "Cinzel, Playfair Display, serif"
+  },
+  "openingHours": {
+    "days": {
+      "en": "Tuesday - Sunday (Closed Mondays)",
+      "ur": "منگل تا اتوار (پیر کو بند)"
+    },
+    "open": "17:00",
+    "close": "01:30"
+  },
+  "address": {
+    "en": "Building 28, Rooftop Terrace, MM Alam Road, Gulberg III, Lahore",
+    "ur": "بلڈنگ 28، روف ٹاپ، ایم ایم عالم روڈ، گلبرگ 3، لاہور"
+  },
+  "googleMapsUrl": "https://maps.google.com/?q=MM+Alam+Road+Lahore",
+  "socialLinks": {
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "website": "https://nocturnebistro.com"
+  },
+  "promoBanner": {
+    "active": true,
+    "text": {
+      "en": "🥩 Chef's Tasting Special: Complimentary Truffle Fries on orders over Rs 3,500",
+      "ur": "🥩 شیف کی خاص پیشکش: 3,500 روپے سے زائد کے آرڈر پر مفت ٹرفل فرائز"
+    },
+    "code": "CHEFGIFT"
+  },
+  "categories": [
+    {
+      "id": "steaks",
+      "name": {
+        "en": "Prime Steaks & Cuts",
+        "ur": "پریمیم بیف اسٹیکس"
+      },
+      "icon": "Flame"
+    },
+    {
+      "id": "burgers",
+      "name": {
+        "en": "Gourmet Burgers",
+        "ur": "گورمے برگرز"
+      },
+      "icon": "Utensils"
+    },
+    {
+      "id": "starters",
+      "name": {
+        "en": "Small Plates & Tapas",
+        "ur": "اسٹارٹرز اور ایپی ٹائزرز"
+      },
+      "icon": "Sparkles"
+    },
+    {
+      "id": "mocktails",
+      "name": {
+        "en": "Signature Elixirs",
+        "ur": "خاص موکٹیلز"
+      },
+      "icon": "Wine"
+    },
+    {
+      "id": "desserts",
+      "name": {
+        "en": "Artisan Desserts",
+        "ur": "ڈیزرٹس اور سوئٹس"
+      },
+      "icon": "HeartHandshake"
+    }
+  ],
+  "items": [
+    {
+      "id": "wagyu-ribeye",
+      "categoryId": "steaks",
+      "name": {
+        "en": "A5 Black Angus Ribeye (350g)",
+        "ur": "بلیک اینگس رِب آئی اسٹیک"
+      },
+      "description": {
+        "en": "Charcoal-seared dry-aged ribeye served with roasted garlic bone marrow, wild mushrooms, and smoked peppercorn jus.",
+        "ur": "کوئلے پر پکا ہوا جوسی بیف اسٹیک مع بھنی ہوئی گودے کی ہڈی اور کالی مرچ کی خاص ساس"
+      },
+      "price": 3800,
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "variants": [
+        { "id": "medium-rare", "name": { "en": "Medium Rare (Recommended)", "ur": "میڈیم ریئر (تجویز کردہ)" }, "price": 3800 },
+        { "id": "medium", "name": { "en": "Medium", "ur": "میڈیم" }, "price": 3800 },
+        { "id": "well-done", "name": { "en": "Well Done", "ur": "ویل ڈن (خوب پکا ہوا)" }, "price": 3800 }
+      ],
+      "addOns": [
+        { "id": "truffle-butter", "name": { "en": "Black Truffle Herb Butter", "ur": "ٹرفل بٹر" }, "price": 350 },
+        { "id": "lobster-tail", "name": { "en": "Butter Poached Prawns", "ur": "بٹر پرانز" }, "price": 850 }
+      ]
+    },
+    {
+      "id": "filet-mignon",
+      "categoryId": "steaks",
+      "name": {
+        "en": "Prime Tenderloin Filet Mignon",
+        "ur": "فلے مگنن پریمیم ٹینڈرلوئن"
+      },
+      "description": {
+        "en": "Center-cut prime beef tenderloin wrapped in smoked veal bacon, served with velvety potato purée and chimichurri.",
+        "ur": "نہایت نرم و ملائم بیف ٹینڈرلوئن، پوٹیٹو پیوری اور ارجنٹائنی چمی چوری ساس"
+      },
+      "price": 3400,
+      "image": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&h=450&q=80",
+      "variants": [
+        { "id": "med-rare", "name": { "en": "Medium Rare", "ur": "میڈیم ریئر" }, "price": 3400 },
+        { "id": "med", "name": { "en": "Medium", "ur": "میڈیم" }, "price": 3400 }
+      ]
+    },
+    {
+      "id": "truffle-smash-burger",
+      "categoryId": "burgers",
+      "name": {
+        "en": "Double Truffle Smash Burger",
+        "ur": "ڈبل ٹرفل اسمیش برگر"
+      },
+      "description": {
+        "en": "Twin smashed Angus patties, aged cheddar, caramelized onion jam, black truffle aioli on toasted potato brioche.",
+        "ur": "دو عدد کرسپی اسمیش پیٹیز، پرانا چیڈر پنیر، کیریمل پیاز اور ٹرفل ساس"
+      },
+      "price": 1450,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "variants": [
+        { "id": "double", "name": { "en": "Double Patty (Standard)", "ur": "ڈبل پیٹی" }, "price": 1450 },
+        { "id": "triple", "name": { "en": "Triple Beast Mode", "ur": "ٹرپل پیٹی بیف" }, "price": 1850 }
+      ],
+      "addOns": [
+        { "id": "extra-bacon", "name": { "en": "Crispy Beef Bacon", "ur": "کرسپی بیف بیکن" }, "price": 220 },
+        { "id": "jalapenos", "name": { "en": "Fire Pickled Jalapeños", "ur": "تیکھی ہلاپینو مرچ" }, "price": 100 }
+      ]
+    },
+    {
+      "id": "nashville-hot-chicken",
+      "categoryId": "burgers",
+      "name": {
+        "en": "Nashville Ghost Hot Chicken",
+        "ur": "نیش ول ہاٹ کرسپی برگر"
+      },
+      "description": {
+        "en": "Crispy spiced chicken thigh dredged in fiery cayenne butter oil, sweet dill pickles, and creamy ranch slaw.",
+        "ur": "انتہائی کرکرا مصالحہ دار چکن، ڈل پکلز اور رینچ سلاد"
+      },
+      "price": 1280,
+      "image": "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&h=450&q=80",
+      "isSpicy": true,
+      "addOns": [
+        { "id": "cheese-sauce", "name": { "en": "Molten Cheddar Dip", "ur": "گرم پگھلا ہوا چیڈر ڈپ" }, "price": 180 }
+      ]
+    },
+    {
+      "id": "crispy-calamari",
+      "categoryId": "starters",
+      "name": {
+        "en": "Salt & Pepper Crispy Squid",
+        "ur": "سالٹ اینڈ پیپر کرسپی کیلاماری"
+      },
+      "description": {
+        "en": "Tender squid flash-fried with roasted Szechuan peppercorns, scallions, fresh chili, and smoked lime garlic dip.",
+        "ur": "کرسپی فرائیڈ کیلاماری، سبز پیاز اور لائم گارلک میو ڈپ"
+      },
+      "price": 1350,
+      "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&h=450&q=80",
+      "isNew": true
+    },
+    {
+      "id": "parmesan-truffle-fries",
+      "categoryId": "starters",
+      "name": {
+        "en": "Parmesan Reggiano Truffle Fries",
+        "ur": "پامیزان ٹرفل فرائز"
+      },
+      "description": {
+        "en": "Hand-cut Idaho fries tossed with white truffle oil, 24-month aged parmesan, rosemary, and roasted garlic dip.",
+        "ur": "ہاتھ سے کاٹے ہوئے فرائز مع سفید ٹرفل آئل اور 24 ماہ پرانا پامیزان پنیر"
+      },
+      "price": 750,
+      "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "isVeg": true
+    },
+    {
+      "id": "burrata-heirloom",
+      "categoryId": "starters",
+      "name": {
+        "en": "Pugliese Burrata & Fig",
+        "ur": "اطالوی بوراٹا اور انجیر سلاد"
+      },
+      "description": {
+        "en": "Creamy 150g Italian burrata cheese, caramelized mission figs, aged Modena balsamic reduction, and grilled sourdough.",
+        "ur": "کریمی اطالوی بوراٹا چیز، میٹھی انجیر اور موڈینا بالسامک گلیز"
+      },
+      "price": 1650,
+      "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb22509?auto=format&fit=crop&w=600&h=450&q=80",
+      "isVeg": true
+    },
+    {
+      "id": "smoked-old-fashioned",
+      "categoryId": "mocktails",
+      "name": {
+        "en": "Nocturne Smoked Oak Elixir",
+        "ur": "نوکٹرن اسموکڈ ایلکسر"
+      },
+      "description": {
+        "en": "Cold-smoked with cedar wood, non-alcoholic bourbon extract, blood orange zest, and aromatic bitters.",
+        "ur": "دیودار کی لکڑی کے دھویں سے تیار کردہ غیر الکوحل کلاسک بیوریج"
+      },
+      "price": 680,
+      "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true
+    },
+    {
+      "id": "yuzu-blackberry-fizz",
+      "categoryId": "mocktails",
+      "name": {
+        "en": "Japanese Yuzu & Wild Blackberry",
+        "ur": "جاپانی یوزو اور بلیک بیری فِز"
+      },
+      "description": {
+        "en": "Muddled wild mountain blackberries, Japanese yuzu citrus juice, thyme sprigs, and botanical tonic water.",
+        "ur": "تازہ بلیک بیریز، جاپانی یوزو لیموں اور ٹانک واٹر"
+      },
+      "price": 620,
+      "image": "https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=600&h=450&q=80"
+    },
+    {
+      "id": "molten-lava-cake",
+      "categoryId": "desserts",
+      "name": {
+        "en": "Molten Guayaquil Lava Fondant",
+        "ur": "مولٹن چاکلیٹ لاوا کیک"
+      },
+      "description": {
+        "en": "Warm dark Ecuadorian chocolate cake with a molten truffle center, accompanied by Madagascar vanilla bean gelato.",
+        "ur": "گرم ڈارک چاکلیٹ کیک جس کے اندر سے گرم چاکلیٹ بہتی ہے، ونیلا جیلاٹو کے ساتھ"
+      },
+      "price": 950,
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true
+    },
+    {
+      "id": "lotus-creme-brulee",
+      "categoryId": "desserts",
+      "name": {
+        "en": "Lotus Biscoff Crème Brûlée",
+        "ur": "لوٹس بسکوف کریم برولے"
+      },
+      "description": {
+        "en": "Silky custard infused with Belgian spiced speculoos, cracked caramelized sugar crust, and crushed biscuits.",
+        "ur": "کرسپی کیریملائیزڈ چینی کی تہہ اور لوٹس بسکوف کریم"
+      },
+      "price": 820,
+      "image": "https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?auto=format&fit=crop&w=600&h=450&q=80"
+    }
+  ]
+}

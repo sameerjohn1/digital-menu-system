@@ -1,0 +1,299 @@
+{
+  "slug": "royal-bbq",
+  "name": {
+    "en": "Royal BBQ House",
+    "ur": "رائل بی بی کیو ہاؤس"
+  },
+  "tagline": {
+    "en": "Traditional charcoal grills, smoky skewers, handis & royal clay-oven karahis.",
+    "ur": "روایتی کوئلہ کڑاہی، سجی، ملائی بوٹی اور شاہی مٹن کڑاہی"
+  },
+  "whatsappNumber": "923008889911",
+  "currency": {
+    "code": "PKR",
+    "symbol": "Rs",
+    "symbolUr": "روپے"
+  },
+  "logo": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=200&h=200&q=80",
+  "coverImage": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&h=500&q=80",
+  "theme": {
+    "primary": "#E63946",
+    "primaryHover": "#D62828",
+    "accent": "#FFB703",
+    "background": "#0F0C0C",
+    "surface": "#1A1515",
+    "text": "#FDF8F5",
+    "textMuted": "#A89F91",
+    "cardBg": "#1F1919",
+    "border": "#2E2424",
+    "mode": "dark",
+    "fontHeading": "Playfair Display, serif"
+  },
+  "openingHours": {
+    "days": {
+      "en": "Monday - Sunday (Dinner & Late Night)",
+      "ur": "پیر تا اتوار (شام تا رات دیر تک)"
+    },
+    "open": "18:00",
+    "close": "02:30"
+  },
+  "address": {
+    "en": "Main Boulevard, Gulberg III, Lahore, Pakistan",
+    "ur": "مین بلیوارڈ، گلبرگ 3، لاہور، پاکستان"
+  },
+  "googleMapsUrl": "https://maps.google.com/?q=Gulberg+III+Lahore",
+  "socialLinks": {
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "website": "https://royalbbqhouse.pk"
+  },
+  "promoBanner": {
+    "active": true,
+    "text": {
+      "en": "🔥 Royal Family Platter Special: Complimentary Mint Raita & Roghani Naans on orders above Rs 4,000",
+      "ur": "🔥 شاہی فیملی پلیٹر: 4,000 روپے سے زائد کے آرڈر پر مفت پودینہ رائتہ اور روغنی نان"
+    },
+    "code": "ROYALBBQ"
+  },
+  "tablesCount": 12,
+  "categories": [
+    {
+      "id": "bbq-grill",
+      "name": {
+        "en": "Smoky Charcoal BBQ",
+        "ur": "کوئلہ باربی کیو اور کباب"
+      },
+      "icon": "Flame"
+    },
+    {
+      "id": "karahi-handi",
+      "name": {
+        "en": "Clay Karahi & Handi",
+        "ur": "دیسی گھی کڑاہی اور ہانڈی"
+      },
+      "icon": "Utensils"
+    },
+    {
+      "id": "rice-special",
+      "name": {
+        "en": "Dum Biryani & Rice",
+        "ur": "شاہی دم بریانی"
+      },
+      "icon": "Sparkles"
+    },
+    {
+      "id": "tandoor",
+      "name": {
+        "en": "Tandoor Fresh Naans",
+        "ur": "تندوری نان اور روٹیاں"
+      },
+      "icon": "Cake"
+    },
+    {
+      "id": "drinks-desserts",
+      "name": {
+        "en": "Lassi, Drinks & Desserts",
+        "ur": "میٹھی لسی اور شاہی میٹھے"
+      },
+      "icon": "GlassWater"
+    }
+  ],
+  "items": [
+    {
+      "id": "chicken-malai-boti",
+      "categoryId": "bbq-grill",
+      "name": {
+        "en": "Melt-in-Mouth Chicken Malai Boti",
+        "ur": "چکن ملائی بوٹی (انتہائی نرم)"
+      },
+      "description": {
+        "en": "Boneless chicken cubes marinated in clotted cream, green chilies, coriander, and royal white spices, grilled over live coals.",
+        "ur": "ملائی، ہری مرچ اور خاص سفید مصالحوں میں تیار کردہ کوئلے پر سکی ہوئی چکن بوٹی"
+      },
+      "price": 1050,
+      "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "variants": [
+        { "id": "half", "name": { "en": "Half Plate (8 pcs)", "ur": "ہاف پلیٹ (8 بوٹیاں)" }, "price": 1050 },
+        { "id": "full", "name": { "en": "Full Plate (16 pcs)", "ur": "فل پلیٹ (16 بوٹیاں)" }, "price": 1950 }
+      ],
+      "addOns": [
+        { "id": "extra-raita", "name": { "en": "Mint Coriander Raita", "ur": "پودینہ و دھنیا رائتہ" }, "price": 120 },
+        { "id": "kachumber-salad", "name": { "en": "Fresh Kachumber Salad", "ur": "تازہ کچومر سلاد" }, "price": 100 }
+      ]
+    },
+    {
+      "id": "beef-seekh-kabab",
+      "categoryId": "bbq-grill",
+      "name": {
+        "en": "Royal Beef Seekh Kabab",
+        "ur": "شاہی بیف سیخ کباب"
+      },
+      "description": {
+        "en": "Hand-minced prime beef infused with charred onions, ginger, crushed roasted cumin, and traditional tandoori spices.",
+        "ur": "ہاتھ کے قیمے سے تیار کردہ جوسی بیف سیخ کباب، بھنا ہوا زیرہ اور دھنیا"
+      },
+      "price": 980,
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "variants": [
+        { "id": "single", "name": { "en": "4 Skewers (Standard)", "ur": "4 سیخیں" }, "price": 980 },
+        { "id": "family", "name": { "en": "8 Skewers (Family)", "ur": "8 سیخیں (فیملی)" }, "price": 1850 }
+      ],
+      "addOns": [
+        { "id": "puri-paratha", "name": { "en": "Crispy Puri Paratha (2 pcs)", "ur": "پوری پراٹھا (2 عدد)" }, "price": 180 }
+      ]
+    },
+    {
+      "id": "mutton-chops-bbq",
+      "categoryId": "bbq-grill",
+      "name": {
+        "en": "Smoky Charcoal Mutton Chops",
+        "ur": "مٹن چانپ کوئلہ گرل"
+      },
+      "description": {
+        "en": "Tender lamb chops tenderized with raw papaya, garlic paste, and garam masala, flame-kissed to perfection.",
+        "ur": "نہایت لذیذ مٹن چانپیں، گرم مصالحہ اور کوئلے کا شاندار دھواں"
+      },
+      "price": 2200,
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&h=450&q=80",
+      "isNew": true,
+      "addOns": [
+        { "id": "lemon-chili-dip", "name": { "en": "Spicy Lemon Garlic Chutney", "ur": "تیکھی لیمن گارلک چٹنی" }, "price": 120 }
+      ]
+    },
+    {
+      "id": "reshmi-kabab-chicken",
+      "categoryId": "bbq-grill",
+      "name": {
+        "en": "Golden Chicken Reshmi Kabab",
+        "ur": "ریشمی چکن کباب"
+      },
+      "description": {
+        "en": "Fine chicken mince blended with saffron cream, roasted gram flour, and subtle green spices for a silky finish.",
+        "ur": "زعفرانی کریم اور سفید مصالحوں کے ساتھ ریشم جیسا ملائم چکن کباب"
+      },
+      "price": 950,
+      "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&h=450&q=80"
+    },
+    {
+      "id": "desi-ghee-mutton-karahi",
+      "categoryId": "karahi-handi",
+      "name": {
+        "en": "Desi Ghee Shinwari Mutton Karahi",
+        "ur": "شنواری مٹن کڑاہی (دیسی گھی)"
+      },
+      "description": {
+        "en": "Freshly butchered mutton cooked in pure country ghee with sun-ripened tomatoes, green chilies, and black pepper. Zero onion Shinwari style.",
+        "ur": "خالص دیسی گھی، تازہ ٹماٹر، سبز مرچ اور کالی مرچ میں تیار شنواری مٹن کڑاہی"
+      },
+      "price": 2800,
+      "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "variants": [
+        { "id": "half-kg", "name": { "en": "Half KG (Small Pot)", "ur": "نصف کلو کڑاہی" }, "price": 2800 },
+        { "id": "one-kg", "name": { "en": "1 KG (Full Clay Pot)", "ur": "ایک کلو کڑاہی" }, "price": 5200 }
+      ],
+      "addOns": [
+        { "id": "extra-ghee", "name": { "en": "Extra Desi Ghee Tarka", "ur": "اضافی دیسی گھی تڑکا" }, "price": 250 },
+        { "id": "ginger-julienne", "name": { "en": "Fresh Ginger & Lemon Plate", "ur": "ادرک اور لیموں" }, "price": 80 }
+      ]
+    },
+    {
+      "id": "chicken-white-handi",
+      "categoryId": "karahi-handi",
+      "name": {
+        "en": "Boneless Chicken Makhni White Handi",
+        "ur": "چکن مکھنی وائٹ ہانڈی"
+      },
+      "description": {
+        "en": "Tender boneless chicken cubes simmered in cashew-almond paste, sweet cream, butter, and crushed white peppercorns in an earthen pot.",
+        "ur": "مٹی کی ہانڈی میں پکا ہوا بون لیس چکن، کاجو بادام پیسٹ اور مکھن کی گریوی"
+      },
+      "price": 1850,
+      "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "variants": [
+        { "id": "half", "name": { "en": "Half Handi", "ur": "ہاف ہانڈی" }, "price": 1850 },
+        { "id": "full", "name": { "en": "Full Handi", "ur": "فل ہانڈی" }, "price": 3200 }
+      ]
+    },
+    {
+      "id": "royal-mutton-biryani",
+      "categoryId": "rice-special",
+      "name": {
+        "en": "Special Royal Mutton Dum Biryani",
+        "ur": "شاہی مٹن دم بریانی"
+      },
+      "description": {
+        "en": "Long-grain aged basmati layered with tender mutton marinated in saffron yogurt, caramelized onions, and kewra essence. Served in sealed clay pot.",
+        "ur": "زعفران، کیوڑا اور خالص دیسی مصالحوں سے دم دی گئی خوشبودار مٹن بریانی"
+      },
+      "price": 1350,
+      "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "variants": [
+        { "id": "single", "name": { "en": "Single Serving", "ur": "سنگل سرونگ" }, "price": 1350 },
+        { "id": "platter", "name": { "en": "Jumbo Feast Platter", "ur": "جمبو فیملی پلیٹر" }, "price": 2600 }
+      ]
+    },
+    {
+      "id": "garlic-cheese-naan",
+      "categoryId": "tandoor",
+      "name": {
+        "en": "Stuffed Garlic & Mozzarella Naan",
+        "ur": "گارلک اینڈ چیز بھرا نان"
+      },
+      "description": {
+        "en": "Clay-oven baked fluffy bread stuffed with molten mozzarella, brushed with roasted garlic butter and fresh coriander.",
+        "ur": "پگھلے ہوئے پنیر سے بھرا تندوری نان، لہسن اور مکھن کا تڑکا"
+      },
+      "price": 380,
+      "image": "https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true
+    },
+    {
+      "id": "roghani-til-naan",
+      "categoryId": "tandoor",
+      "name": {
+        "en": "Special Roghani Sesame Naan",
+        "ur": "شاہی روغنی تل والا نان"
+      },
+      "description": {
+        "en": "Traditional pillowy naan prepared with milk, egg, and butter, stamped with white sesame seeds.",
+        "ur": "دودھ اور مکھن سے گوندھا ہوا روغنی تلوں والا روایتی نان"
+      },
+      "price": 140,
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&h=450&q=80"
+    },
+    {
+      "id": "sweet-khoya-lassi",
+      "categoryId": "drinks-desserts",
+      "name": {
+        "en": "Creamy Sweet Khoya Lassi",
+        "ur": "میٹھی کھویا پیڑا لسی"
+      },
+      "description": {
+        "en": "Thick village-style yogurt churned with sweetened reduced milk khoya, topped with clotted malai and crushed pistachios.",
+        "ur": "گاڑھے دہی اور کھوئے سے بنی روایتی میٹھی لسی مع بالائی اور پستہ"
+      },
+      "price": 380,
+      "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true
+    },
+    {
+      "id": "kheer-khas",
+      "categoryId": "drinks-desserts",
+      "name": {
+        "en": "Shahi Matka Kheer Khas",
+        "ur": "شاہی مٹکا کھیر خاص"
+      },
+      "description": {
+        "en": "Slow-cooked rice pudding infused with saffron, cardamom, and silver leaf in an unglazed clay bowl.",
+        "ur": "مٹی کے پیالے میں سجی زعفرانی شاہی کھیر، چاندی کے ورق اور بادام کے ساتھ"
+      },
+      "price": 420,
+      "image": "https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?auto=format&fit=crop&w=600&h=450&q=80"
+    }
+  ]
+}

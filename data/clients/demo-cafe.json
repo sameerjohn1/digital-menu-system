@@ -1,0 +1,616 @@
+{
+  "slug": "demo-cafe",
+  "name": {
+    "en": "The Artisan Roast Café & Bakery",
+    "ur": "دی آرٹیسن روسٹ کیفے اینڈ بیکری"
+  },
+  "tagline": {
+    "en": "Artisanal espresso, handcrafted sourdough & gourmet brunch.",
+    "ur": "کاریگرانہ ایسپریسو کافی، تازہ بیکری اور لذیذ برنچ"
+  },
+  "whatsappNumber": "923001234567",
+  "currency": {
+    "code": "PKR",
+    "symbol": "Rs",
+    "symbolUr": "روپے"
+  },
+  "logo": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=200&h=200&q=80",
+  "coverImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&h=500&q=80",
+  "theme": {
+    "primary": "#C8553D",
+    "primaryHover": "#B04630",
+    "accent": "#E8A598",
+    "background": "#FFF8F0",
+    "surface": "#FFFFFF",
+    "text": "#1F1B16",
+    "textMuted": "#6E6259",
+    "cardBg": "#FFFFFF",
+    "border": "#EFE6DC",
+    "mode": "light",
+    "fontHeading": "Playfair Display, serif"
+  },
+  "openingHours": {
+    "days": {
+      "en": "Monday - Sunday (7 Days)",
+      "ur": "پیر تا اتوار (ہفتے کے ساتوں دن)"
+    },
+    "open": "08:00",
+    "close": "23:30"
+  },
+  "address": {
+    "en": "Plot 14-C, Lane 4, Phase 6, DHA, Karachi",
+    "ur": "پلاٹ 14-سی، لین 4، فیز 6، ڈی ایچ اے، کراچی"
+  },
+  "googleMapsUrl": "https://maps.google.com/?q=Karachi+DHA+Phase+6",
+  "socialLinks": {
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "website": "https://theartisanroast.com"
+  },
+  "promoBanner": {
+    "active": true,
+    "text": {
+      "en": "🎉 15% OFF your first order! Mention code ROAST15 on WhatsApp",
+      "ur": "🎉 پہلے آرڈر پر 15 فیصد رعایت! واٹس ایپ پر کوڈ ROAST15 لکھیں"
+    },
+    "code": "ROAST15"
+  },
+  "tablesCount": 10,
+  "categories": [
+    {
+      "id": "coffee",
+      "name": {
+        "en": "Specialty Coffee",
+        "ur": "خاص کافی"
+      },
+      "icon": "Coffee"
+    },
+    {
+      "id": "sandwiches",
+      "name": {
+        "en": "Artisan Sandwiches",
+        "ur": "سینڈوچز اور پینینی"
+      },
+      "icon": "Sandwich"
+    },
+    {
+      "id": "brunch",
+      "name": {
+        "en": "All-Day Brunch",
+        "ur": "برنچ اور ناشتہ"
+      },
+      "icon": "Egg"
+    },
+    {
+      "id": "bakery",
+      "name": {
+        "en": "Pastries & Bakes",
+        "ur": "پیسٹری اور میٹھے"
+      },
+      "icon": "Cake"
+    },
+    {
+      "id": "beverages",
+      "name": {
+        "en": "Chilled Beverages",
+        "ur": "ٹھنڈے مشروبات"
+      },
+      "icon": "GlassWater"
+    }
+  ],
+  "items": [
+    {
+      "id": "spanish-latte",
+      "categoryId": "coffee",
+      "name": {
+        "en": "Signature Spanish Latte",
+        "ur": "اسپینش لاٹے (خاص کافی)"
+      },
+      "description": {
+        "en": "Double ristretto shot pulled over condensed milk and velvety textured microfoam.",
+        "ur": "دوہرا ایسپریسو شاٹ، کنڈینسڈ ملک اور کریمی جھاگ دار دودھ"
+      },
+      "price": 680,
+      "image": "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "variants": [
+        {
+          "id": "reg",
+          "name": {
+            "en": "Regular (250ml)",
+            "ur": "ریگولر (250 ملی)"
+          },
+          "price": 680
+        },
+        {
+          "id": "large",
+          "name": {
+            "en": "Large (380ml)",
+            "ur": "بڑا (380 ملی)"
+          },
+          "price": 820
+        },
+        {
+          "id": "iced",
+          "name": {
+            "en": "Iced (400ml)",
+            "ur": "آئسڈ ٹھنڈی (400 ملی)"
+          },
+          "price": 750
+        }
+      ],
+      "addOns": [
+        {
+          "id": "extra-shot",
+          "name": {
+            "en": "Extra Espresso Shot",
+            "ur": "اضافی ایسپریسو شاٹ"
+          },
+          "price": 150
+        },
+        {
+          "id": "oat-milk",
+          "name": {
+            "en": "Oat Milk Substitute",
+            "ur": "اوٹ ملک (سبزی متبادل)"
+          },
+          "price": 180
+        },
+        {
+          "id": "caramel-drizzle",
+          "name": {
+            "en": "Salted Caramel Drizzle",
+            "ur": "کیریمل شیرہ"
+          },
+          "price": 120
+        }
+      ]
+    },
+    {
+      "id": "flat-white",
+      "categoryId": "coffee",
+      "name": {
+        "en": "Velvet Flat White",
+        "ur": "فلیٹ وائٹ کافی"
+      },
+      "description": {
+        "en": "Single-origin Ethiopian beans with silky micro-textured whole milk and delicate latte art.",
+        "ur": "ایتھوپین بینز اور ریشمی باریک جھاگ والا گرما گرم دودھ"
+      },
+      "price": 590,
+      "image": "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?auto=format&fit=crop&w=600&h=450&q=80",
+      "variants": [
+        {
+          "id": "standard",
+          "name": {
+            "en": "Standard (200ml)",
+            "ur": "معیاری سائز"
+          },
+          "price": 590
+        },
+        {
+          "id": "double",
+          "name": {
+            "en": "Double Cup (350ml)",
+            "ur": "بڑا کپ"
+          },
+          "price": 740
+        }
+      ],
+      "addOns": [
+        {
+          "id": "almond-milk",
+          "name": {
+            "en": "Almond Milk",
+            "ur": "بادام کا دودھ"
+          },
+          "price": 180
+        },
+        {
+          "id": "vanilla-syrup",
+          "name": {
+            "en": "Madagascar Vanilla",
+            "ur": "ونیلا سیرپ"
+          },
+          "price": 120
+        }
+      ]
+    },
+    {
+      "id": "cold-brew",
+      "categoryId": "coffee",
+      "name": {
+        "en": "Nitro Cold Brew",
+        "ur": "نائٹرو کولڈ برُو کافی"
+      },
+      "description": {
+        "en": "Steeped for 18 hours in cold filtered water, nitrogen infused for an ultra-creamy head.",
+        "ur": "18 گھنٹے تک ٹھنڈے پانی میں دم کی گئی خاص نائٹرو کافی"
+      },
+      "price": 640,
+      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=450&q=80",
+      "isNew": true,
+      "addOns": [
+        {
+          "id": "sweet-cream",
+          "name": {
+            "en": "Vanilla Sweet Cream Float",
+            "ur": "میٹھی ونیلا کریم"
+          },
+          "price": 140
+        }
+      ]
+    },
+    {
+      "id": "mocha-choc",
+      "categoryId": "coffee",
+      "name": {
+        "en": "Belgian Dark Mocha",
+        "ur": "بیلجیئن ڈارک موکا"
+      },
+      "description": {
+        "en": "Rich 70% dark Belgian chocolate melted into fresh espresso and steamed milk.",
+        "ur": "بیلجیئن ڈارک چاکلیٹ اور تازہ ایسپریسو کا بہترین امتزاج"
+      },
+      "price": 720,
+      "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=600&h=450&q=80",
+      "addOns": [
+        {
+          "id": "whipped-cream",
+          "name": {
+            "en": "Whipped Cream Cloud",
+            "ur": "وِپڈ کریم"
+          },
+          "price": 90
+        },
+        {
+          "id": "extra-shot",
+          "name": {
+            "en": "Extra Shot",
+            "ur": "اضافی شاٹ"
+          },
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "truffle-chicken-panini",
+      "categoryId": "sandwiches",
+      "name": {
+        "en": "Truffle Chicken & Mushroom Panini",
+        "ur": "ٹرفل چکن اینڈ مشروم پینینی"
+      },
+      "description": {
+        "en": "Grilled herb chicken, sautéed portobello, aged provolone, and black truffle aioli on artisan ciabatta.",
+        "ur": "بھنا ہوا ہرب چکن، مشروم، پرولون چیز اور ٹرفل ساس تازہ سیا باٹا بریڈ پر"
+      },
+      "price": 1250,
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "addOns": [
+        {
+          "id": "extra-cheese",
+          "name": {
+            "en": "Extra Provolone Cheese",
+            "ur": "اضافی چیز"
+          },
+          "price": 200
+        },
+        {
+          "id": "crispy-fries",
+          "name": {
+            "en": "Side Fries & Garlic Mayo",
+            "ur": "فرائز اور گارلک میو"
+          },
+          "price": 280
+        }
+      ]
+    },
+    {
+      "id": "smoked-turkey-club",
+      "categoryId": "sandwiches",
+      "name": {
+        "en": "Artisan Smoked Club",
+        "ur": "سموکڈ کلب سینڈوچ"
+      },
+      "description": {
+        "en": "Triple-decker brioche with smoked turkey, honey beef bacon, cheddar, romaine, and dijonnaise.",
+        "ur": "تین منزلہ بریوش، سموکڈ میٹ، بیف بیکن، چیڈر چیز اور ڈائجون ساس"
+      },
+      "price": 1350,
+      "image": "https://images.unsplash.com/photo-1567234669003-dce7a7a88821?auto=format&fit=crop&w=600&h=450&q=80",
+      "addOns": [
+        {
+          "id": "egg-addon",
+          "name": {
+            "en": "Sunny Fried Egg",
+            "ur": "تلا ہوا انڈا"
+          },
+          "price": 120
+        },
+        {
+          "id": "curly-fries",
+          "name": {
+            "en": "Spicy Curly Fries",
+            "ur": "اسپائسی کرلی فرائز"
+          },
+          "price": 320
+        }
+      ]
+    },
+    {
+      "id": "avocado-sourdough",
+      "categoryId": "sandwiches",
+      "name": {
+        "en": "Smashed Avocado Toast",
+        "ur": "ایواکاڈو سورڈو ٹوسٹ"
+      },
+      "description": {
+        "en": "Hass avocado, chili flakes, Danish feta cheese, heirloom cherry tomatoes on toasted rustic sourdough.",
+        "ur": "تازہ ایواکاڈو، چلی فلیکس، فیٹا چیز اور چیری ٹماٹر دیسی سورڈو روٹی پر"
+      },
+      "price": 1150,
+      "image": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=600&h=450&q=80",
+      "isVeg": true,
+      "addOns": [
+        {
+          "id": "poached-egg",
+          "name": {
+            "en": "Organic Poached Egg",
+            "ur": "پوچڈ انڈا"
+          },
+          "price": 140
+        },
+        {
+          "id": "smoked-salmon",
+          "name": {
+            "en": "Smoked Salmon Slice",
+            "ur": "سموکڈ سالمن مچھلی"
+          },
+          "price": 450
+        }
+      ]
+    },
+    {
+      "id": "pesto-mozzarella",
+      "categoryId": "sandwiches",
+      "name": {
+        "en": "Caprese Pesto Focaccia",
+        "ur": "کیپریس پیسٹو فوکاشیا"
+      },
+      "description": {
+        "en": "Fresh buffalo mozzarella, vine tomatoes, basil pesto, and balsamic glaze on rosemary olive oil focaccia.",
+        "ur": "تازہ بھینس کا موزریلا پنیر، بیزل پیسٹو اور بالسامک گلیز فوکاشیا بریڈ پر"
+      },
+      "price": 1100,
+      "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&h=450&q=80",
+      "isVeg": true
+    },
+    {
+      "id": "brioche-french-toast",
+      "categoryId": "brunch",
+      "name": {
+        "en": "Caramelized Brioche French Toast",
+        "ur": "کیریملائزڈ فرنچ ٹوسٹ"
+      },
+      "description": {
+        "en": "Thick-cut golden brioche soaked in vanilla custard, topped with fresh berries, mascarpone, and pure maple syrup.",
+        "ur": "ونیلا کسٹرڈ میں بھیگی موٹی بریوش روٹی، تازہ بیریز، مسکارپون کریم اور میپل سیرپ"
+      },
+      "price": 1180,
+      "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true,
+      "addOns": [
+        {
+          "id": "ice-cream",
+          "name": {
+            "en": "Vanilla Bean Gelato",
+            "ur": "ونیلا جیلاٹو آئس کریم"
+          },
+          "price": 220
+        },
+        {
+          "id": "nutella",
+          "name": {
+            "en": "Warm Nutella Drizzle",
+            "ur": "گرم نیوٹیلا چاکلیٹ"
+          },
+          "price": 180
+        }
+      ]
+    },
+    {
+      "id": "eggs-benedict",
+      "categoryId": "brunch",
+      "name": {
+        "en": "Royal Eggs Benedict",
+        "ur": "رائل ایگز بینیڈکٹ"
+      },
+      "description": {
+        "en": "Two poached farm eggs, turkey ham, and velvety citrus hollandaise sauce on toasted English muffins.",
+        "ur": "دو عدد پوچڈ انڈے، ترکی ہیم اور ہولینڈائز ساس انگلش مفنز پر"
+      },
+      "price": 1280,
+      "image": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=600&h=450&q=80",
+      "addOns": [
+        {
+          "id": "hash-brown",
+          "name": {
+            "en": "Crispy Hash Browns (2pcs)",
+            "ur": "ہیش براؤنز (2 عدد)"
+          },
+          "price": 250
+        }
+      ]
+    },
+    {
+      "id": "shakshuka-skillet",
+      "categoryId": "brunch",
+      "name": {
+        "en": "Mediterranean Shakshuka",
+        "ur": "میڈیٹیرینین شکشوکاہ"
+      },
+      "description": {
+        "en": "Cast iron skillet baked eggs in a spiced bell pepper and roasted tomato sauce with crumbled feta and warm pita.",
+        "ur": "گرم توے پر بنے انڈے، مصالحہ دار ٹماٹر و شملہ مرچ کی چٹنی، فیٹا چیز اور گرم پیٹا بریڈ"
+      },
+      "price": 1050,
+      "image": "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=600&h=450&q=80",
+      "isSpicy": true,
+      "isVeg": true
+    },
+    {
+      "id": "almond-croissant",
+      "categoryId": "bakery",
+      "name": {
+        "en": "Twice-Baked Almond Croissant",
+        "ur": "بادام والا فرانسیسی کروسینٹ"
+      },
+      "description": {
+        "en": "Flaky French butter croissant filled with almond frangipane cream and topped with toasted sliced almonds.",
+        "ur": "مکھن سے تیار کردہ فرانسیسی کروسینٹ، بادام کی میٹھی کریم اور کرکرے بادام"
+      },
+      "price": 540,
+      "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true
+    },
+    {
+      "id": "pistachio-eclair",
+      "categoryId": "bakery",
+      "name": {
+        "en": "Sicilian Pistachio Éclair",
+        "ur": "پستہ ایکلیئر"
+      },
+      "description": {
+        "en": "Choux pastry pipe filled with silky Sicilian pistachio cremeux and finished with white chocolate pistachio glaze.",
+        "ur": "پستہ کریم سے بھرا فرانسیسی شو پیسٹری ڈیزرٹ"
+      },
+      "price": 580,
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=450&q=80",
+      "isNew": true
+    },
+    {
+      "id": "basque-cheesecake",
+      "categoryId": "bakery",
+      "name": {
+        "en": "Burnt Basque Cheesecake",
+        "ur": "باسک برنٹ چیز کیک"
+      },
+      "description": {
+        "en": "Caramelized deeply browned top with an ultra-creamy, molten vanilla core. Served with raspberry coulis.",
+        "ur": "کیریملائیزڈ برانچڈ اوپر کا حصہ اور پگھلا ہوا ملائم پنیر کا مرکز"
+      },
+      "price": 790,
+      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true
+    },
+    {
+      "id": "chocolate-babka",
+      "categoryId": "bakery",
+      "name": {
+        "en": "Valrhona Chocolate Babka",
+        "ur": "چاکلیٹ بابکا بریڈ"
+      },
+      "description": {
+        "en": "Twisted yeast bread braided with ribbons of dark Valrhona chocolate and crunchy cinnamon streusel.",
+        "ur": "ڈارک چاکلیٹ اور دار چینی کے امتزاج والی روایتی بابکا بریڈ"
+      },
+      "price": 490,
+      "image": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&h=450&q=80",
+      "isSoldOut": false
+    },
+    {
+      "id": "passionfruit-cooler",
+      "categoryId": "beverages",
+      "name": {
+        "en": "Passionfruit & Mint Refresher",
+        "ur": "پیشن فروٹ اور پودینہ شربت"
+      },
+      "description": {
+        "en": "Fresh passionfruit pulp, crushed garden mint, lime juice, and sparkling soda over crushed ice.",
+        "ur": "تازہ پیشن فروٹ، پودینہ، لیموں کا رس اور سوڈا واٹر"
+      },
+      "price": 520,
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=450&q=80",
+      "isVeg": true
+    },
+    {
+      "id": "matcha-iced-latte",
+      "categoryId": "beverages",
+      "name": {
+        "en": "Ceremonial Uji Matcha Latte",
+        "ur": "او جی ماچا گرین ٹی لاٹے"
+      },
+      "description": {
+        "en": "Ceremonial grade Japanese green tea whisked with creamy oat milk and a touch of wild honey.",
+        "ur": "جاپانی ماچا گرین ٹی اور اوٹ ملک کا شاندار صحت بخش مرکب"
+      },
+      "price": 750,
+      "image": "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&h=450&q=80",
+      "isVeg": true,
+      "variants": [
+        {
+          "id": "hot",
+          "name": {
+            "en": "Hot Matcha",
+            "ur": "گرم ماچا"
+          },
+          "price": 750
+        },
+        {
+          "id": "iced",
+          "name": {
+            "en": "Iced Matcha Float",
+            "ur": "ٹھنڈا آئسڈ ماچا"
+          },
+          "price": 790
+        }
+      ]
+    },
+    {
+      "id": "berry-hibiscus",
+      "categoryId": "beverages",
+      "name": {
+        "en": "Iced Berry Hibiscus Tea",
+        "ur": "ہبسکس اینڈ بیری آئسڈ ٹی"
+      },
+      "description": {
+        "en": "Wild hibiscus flowers cold-infused with raspberries, strawberries, and lemon verbena.",
+        "ur": "تازہ گلِ خطمی اور جنگلی بیریز سے تیار کردہ فرحت بخش ٹھنڈی چائے"
+      },
+      "price": 480,
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&h=450&q=80",
+      "isVeg": true
+    },
+    {
+      "id": "salted-caramel-shake",
+      "categoryId": "beverages",
+      "name": {
+        "en": "Salted Caramel Pretzel Shake",
+        "ur": "سالٹڈ کیریمل پرٹزل شیک"
+      },
+      "description": {
+        "en": "Artisan vanilla gelato blended with burnt butter caramel, crushed salted pretzels, and whipped cream.",
+        "ur": "ونیلا جیلاٹو، سالٹڈ کیریمل، کرسپی پرٹزل اور وپڈ کریم"
+      },
+      "price": 780,
+      "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&h=450&q=80",
+      "isPopular": true
+    },
+    {
+      "id": "seasonal-truffle-toast",
+      "categoryId": "brunch",
+      "name": {
+        "en": "Truffle Scrambled Brioche",
+        "ur": "ٹرفل اسکریمبلڈ ایگز برنچ"
+      },
+      "description": {
+        "en": "Soft creamy scrambled organic eggs with fresh shaved winter truffle and chives on toasted milk brioche.",
+        "ur": "مکھن والی بریوش پر ملائم اسکریمبلڈ انڈے اور ٹرفل کا پرتعیش ذائقہ"
+      },
+      "price": 1390,
+      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&h=450&q=80",
+      "isSoldOut": false
+    }
+  ]
+}

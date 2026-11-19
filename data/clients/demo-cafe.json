@@ -8,6 +8,10 @@
     "en": "Artisanal espresso, handcrafted sourdough & gourmet brunch.",
     "ur": "کاریگرانہ ایسپریسو کافی، تازہ بیکری اور لذیذ برنچ"
   },
+  "description": {
+    "en": "A neighborhood bakery and coffee bar serving slow-brewed coffee, laminated pastries, and all-day brunch in a warm, relaxed setting.",
+    "ur": "پڑوسی بیکری اور کافی بار جہاں آہستہ تیار کردہ کافی، تازہ پیسٹری اور ہر وقت کا برنچ گرم و دوستانہ ماحول میں پیش کیا جاتا ہے۔"
+  },
   "whatsappNumber": "923001234567",
   "currency": {
     "code": "PKR",
@@ -55,7 +59,7 @@
     },
     "code": "ROAST15"
   },
-  "tablesCount": 10,
+  "tables": [],
   "categories": [
     {
       "id": "coffee",

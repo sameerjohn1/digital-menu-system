@@ -70,6 +70,7 @@ export const RestaurantConfigSchema = z.object({
   slug: z.string(),
   name: LocalizedTextSchema,
   tagline: LocalizedTextSchema,
+  description: LocalizedTextSchema,
   whatsappNumber: z.string().regex(/^\d+$/, "WhatsApp number must contain only digits including country code"),
   currency: z.object({
     code: z.string(),
@@ -88,7 +89,7 @@ export const RestaurantConfigSchema = z.object({
     website: z.string().optional(),
   }).optional(),
   promoBanner: PromoBannerSchema.optional(),
-  tablesCount: z.number().int().min(0).default(10).optional(),
+  tables: z.array(z.number().int().positive()).default([]),
   categories: z.array(CategorySchema).min(1),
   items: z.array(FoodItemSchema).min(1),
 });

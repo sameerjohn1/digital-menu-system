@@ -11,7 +11,7 @@ export function PricingSection() {
       features: [
         "Full branded menu digitisation",
         "Custom restaurant colors & typography",
-        "High-res printable QR codes for all tables",
+        "One high-res printable QR code for each platform",
         "Full English & Urdu bilingual translation",
         "Unlimited scans & zero commissions",
         "High-speed static hosting on Cloudflare",

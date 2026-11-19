@@ -11,6 +11,8 @@ interface PageProps {
   }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const slugs = getAllClientSlugs();
   return slugs.map((slug) => ({
@@ -30,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `${restaurant.name.en} | Digital QR Menu`,
-    description: restaurant.tagline.en,
+    description: restaurant.description.en,
     openGraph: {
       title: restaurant.name.en,
       description: restaurant.tagline.en,

@@ -8,6 +8,10 @@
     "en": "Authentic wood-fired Neapolitan crusts, bubbling mozzarella & artisan pasta.",
     "ur": "لکڑی کے تندور کا اطالوی نیپولیٹن پیزا، پاستا اور تازہ چیز"
   },
+  "description": {
+    "en": "A wood-fired pizzeria making slow-fermented Neapolitan crusts, hand-rolled pasta, and Italian desserts fresh every day.",
+    "ur": "لکڑی کے تندور والی اطالوی پزیریا جہاں دیر تک خمیر کیے گئے نیپولیٹن پیزے، ہاتھ سے بنی پاستا اور اطالوی میٹھے روزانہ تازہ تیار کیے جاتے ہیں۔"
+  },
   "whatsappNumber": "923007773322",
   "currency": {
     "code": "PKR",
@@ -55,7 +59,7 @@
     },
     "code": "FIRESTONE20"
   },
-  "tablesCount": 8,
+  "tables": [1, 2],
   "categories": [
     {
       "id": "woodfired-pizzas",

@@ -79,6 +79,12 @@ export function HeroBanner({ restaurant, lang }: HeroBannerProps) {
               >
                 {restaurant.tagline[lang]}
               </p>
+              <p
+                className="mt-1.5 text-[11px] leading-relaxed line-clamp-2"
+                style={{ color: restaurant.theme.textMuted }}
+              >
+                {restaurant.description[lang]}
+              </p>
             </div>
           </div>
 

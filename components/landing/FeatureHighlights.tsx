@@ -31,8 +31,8 @@ export function FeatureHighlights() {
     },
     {
       icon: Layers,
-      title: "Table QR & Dine-in / Takeaway / Delivery",
-      desc: "Dynamic table parameter (?table=5) tags the order automatically so your waitstaff and kitchen know exactly where to serve.",
+      title: "Platform QR & Dine-in / Takeaway / Delivery",
+      desc: "One QR per platform opens the right menu instantly. A manual ?table=5 link still tags the order for your waitstaff and kitchen.",
     },
     {
       icon: Zap,

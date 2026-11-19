@@ -52,6 +52,11 @@ export function buildWhatsAppMessage(data: WhatsAppOrderData): string {
   lines.push(`📍 *${restaurantName}*`);
   lines.push("──────────────────");
 
+  if (tableNumber?.trim() && orderType !== "dine_in") {
+    lines.push(`🍽️ *${isUrdu ? "میز نمبر" : "Table"}:* ${tableNumber.trim()}`);
+    lines.push("──────────────────");
+  }
+
   // Customer details for Takeaway / Delivery
   if (customerName && customerName.trim()) {
     lines.push(`👤 *${isUrdu ? "گاہک کا نام" : "Customer"}:* ${customerName.trim()}`);

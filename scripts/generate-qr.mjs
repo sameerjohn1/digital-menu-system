@@ -1,135 +1,186 @@
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import QRCode from "qrcode";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, "..");
-
-// Production Base URL support with fallback
-const args = process.argv.slice(2);
-let customUrl = process.env.BASE_URL;
-const urlFlagIndex = args.indexOf("--url");
-if (urlFlagIndex !== -1 && args[urlFlagIndex + 1]) {
-  customUrl = args[urlFlagIndex + 1];
-}
-
-const BASE_URL = customUrl || "https://animated-menu.pages.dev";
 const clientsDir = path.join(rootDir, "data", "clients");
 const outputBaseDir = path.join(rootDir, "public", "qr-codes");
+const siteConfigPath = path.join(rootDir, "config", "site.json");
 
-async function generateAllQRCodes() {
-  console.log(`\n========================================================`);
-  console.log(`  Animated Digital Menu - Multi-Business QR Generator  `);
-  console.log(`========================================================\n`);
-  console.log(`📡 Production Base URL: ${BASE_URL}\n`);
-
-  if (!fs.existsSync(clientsDir)) {
-    console.error(`❌ Clients directory not found: ${clientsDir}`);
-    process.exit(1);
-  }
-
-  const clientFiles = fs.readdirSync(clientsDir).filter((f) => f.endsWith(".json"));
-  console.log(`Found ${clientFiles.length} business configurations in data/clients/\n`);
-
-  const manifest = [];
-
-  for (const file of clientFiles) {
-    const filePath = path.join(clientsDir, file);
-    const content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    const slug = content.slug;
-    const clientName = content.name?.en || slug;
-    const tablesCount = content.tablesCount !== undefined ? content.tablesCount : 10;
-    const primaryColor = content.theme?.primary || "#000000";
-
-    const clientOutputDir = path.join(outputBaseDir, slug);
-    if (!fs.existsSync(clientOutputDir)) {
-      fs.mkdirSync(clientOutputDir, { recursive: true });
-    }
-
-    console.log(`--------------------------------------------------------`);
-    console.log(`🏢 [Business] ${clientName} (${slug})`);
-    console.log(`   WhatsApp: ${content.whatsappNumber || "N/A"}`);
-    console.log(`   Configured Tables: ${tablesCount}`);
-
-    const businessEntry = {
-      slug,
-      name: clientName,
-      whatsappNumber: content.whatsappNumber,
-      mainUrl: `${BASE_URL}/menu/${slug}`,
-      mainSvg: `/qr-codes/${slug}/main-menu.svg`,
-      mainPng: `/qr-codes/${slug}/main-menu.png`,
-      tables: [],
-    };
-
-    // 1. General Business QR Code (SVG and PNG)
-    const mainUrl = `${BASE_URL}/menu/${slug}`;
-    const mainSvgPath = path.join(clientOutputDir, "main-menu.svg");
-    const mainPngPath = path.join(clientOutputDir, "main-menu.png");
-
-    const mainSvg = await QRCode.toString(mainUrl, {
-      type: "svg",
-      margin: 2,
-      color: { dark: primaryColor, light: "#FFFFFF" },
-    });
-    fs.writeFileSync(mainSvgPath, mainSvg);
-
-    try {
-      await QRCode.toFile(mainPngPath, mainUrl, {
-        width: 600,
-        margin: 2,
-        color: { dark: primaryColor, light: "#FFFFFF" },
-      });
-    } catch {
-      // Fallback if PNG generation fails in certain environments
-    }
-
-    console.log(`   ✓ Main QR: ${mainUrl}`);
-
-    // 2. Table-Specific QR Codes (1 through tablesCount)
-    for (let table = 1; table <= tablesCount; table++) {
-      const tableUrl = `${BASE_URL}/menu/${slug}?table=${table}`;
-      const svgPath = path.join(clientOutputDir, `table-${table}.svg`);
-      const pngPath = path.join(clientOutputDir, `table-${table}.png`);
-
-      const tableSvg = await QRCode.toString(tableUrl, {
-        type: "svg",
-        margin: 2,
-        color: { dark: primaryColor, light: "#FFFFFF" },
-      });
-      fs.writeFileSync(svgPath, tableSvg);
-
-      try {
-        await QRCode.toFile(pngPath, tableUrl, {
-          width: 600,
-          margin: 2,
-          color: { dark: primaryColor, light: "#FFFFFF" },
-        });
-      } catch {
-        // Continue
-      }
-
-      businessEntry.tables.push({
-        tableNumber: table,
-        url: tableUrl,
-        svg: `/qr-codes/${slug}/table-${table}.svg`,
-        png: `/qr-codes/${slug}/table-${table}.png`,
-      });
-    }
-
-    console.log(`   ✓ Generated ${tablesCount} table QR codes (SVG & PNG)`);
-    manifest.push(businessEntry);
-  }
-
-  // Save manifest for fast browser preview in the QR gallery
-  const manifestPath = path.join(outputBaseDir, "manifest.json");
-  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
-  console.log(`--------------------------------------------------------`);
-  console.log(`\n🎉 Success! All QR codes generated in: public/qr-codes/\n`);
+function getArgValue(flag) {
+  const args = process.argv.slice(2);
+  const index = args.indexOf(flag);
+  return index !== -1 ? args[index + 1] : undefined;
 }
 
-generateAllQRCodes().catch((err) => {
-  console.error("❌ Error generating QR codes:", err);
+function resolveBaseUrl() {
+  const siteConfig = JSON.parse(fs.readFileSync(siteConfigPath, "utf8"));
+  const rawUrl =
+    getArgValue("--url") ||
+    process.env.MENU_BASE_URL ||
+    process.env.BASE_URL ||
+    siteConfig.productionUrl;
+
+  const parsed = new URL(rawUrl);
+  if (!["http:", "https:"].includes(parsed.protocol)) {
+    throw new Error("Base URL must use http or https");
+  }
+
+  return `${parsed.origin}${parsed.pathname.replace(/\/+$/, "")}`;
+}
+
+function escapeXml(value) {
+  return String(value).replace(/[<>&"']/g, (character) => {
+    const entities = {
+      "<": "&lt;",
+      ">": "&gt;",
+      "&": "&amp;",
+      '"': "&quot;",
+      "'": "&apos;",
+    };
+    return entities[character];
+  });
+}
+
+function buildMenuUrl(baseUrl, slug) {
+  return new URL(`menu/${slug}`, `${baseUrl}/`).toString();
+}
+
+function getDisplayPath(url) {
+  const parsed = new URL(url);
+  return parsed.pathname;
+}
+
+function createLabeledQrSvg(qrSvg, meta) {
+  const width = 460;
+  const height = 560;
+  const qrSize = 320;
+  const qrX = (width - qrSize) / 2;
+  const qrY = 122;
+  const nameSize = meta.businessName.length > 32 ? 19 : 24;
+
+  const nestedSvg = qrSvg.trim().replace(/^<svg([^>]*)>/, (_, attributes) => {
+    const cleaned = attributes.replace(/\s(?:width|height)="[^"]*"/g, "");
+    return `<svg${cleaned} x="${qrX}" y="${qrY}" width="${qrSize}" height="${qrSize}">`;
+  });
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeXml(`${meta.businessName} Menu QR`)}">
+  <rect width="${width}" height="${height}" rx="28" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="${width}" height="12" rx="6" fill="${meta.color}"/>
+  <text x="${width / 2}" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="${nameSize}" font-weight="700" fill="#18181B">${escapeXml(meta.businessName)}</text>
+  <text x="${width / 2}" y="93" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="${meta.color}">Menu QR</text>
+  ${nestedSvg}
+  <line x1="58" y1="472" x2="${width - 58}" y2="472" stroke="#E4E4E7" stroke-width="1"/>
+  <text x="${width / 2}" y="507" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#52525B">${escapeXml(meta.detail)}</text>
+  <text x="${width / 2}" y="538" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#A1A1AA">Scan to open this menu</text>
+</svg>`;
+}
+
+async function writeQrAssets(url, svgPath, pngPath, meta) {
+  const qrOptions = {
+    errorCorrectionLevel: "M",
+    margin: 2,
+    color: { dark: meta.color, light: "#FFFFFF" },
+  };
+
+  const qrSvg = await QRCode.toString(url, { ...qrOptions, type: "svg" });
+  fs.writeFileSync(svgPath, createLabeledQrSvg(qrSvg, meta), "utf8");
+
+  await QRCode.toFile(pngPath, url, { ...qrOptions, width: 800 });
+}
+
+function readBusinessConfigs() {
+  if (!fs.existsSync(clientsDir)) {
+    throw new Error(`Business data directory not found: ${clientsDir}`);
+  }
+
+  return fs
+    .readdirSync(clientsDir)
+    .filter((file) => file.endsWith(".json"))
+    .sort()
+    .map((file) => {
+      const config = JSON.parse(fs.readFileSync(path.join(clientsDir, file), "utf8"));
+
+      if (!config.slug || !/^[a-z0-9-]+$/.test(config.slug)) {
+        throw new Error(`${file} has an invalid slug`);
+      }
+      if (config.slug !== path.basename(file, ".json")) {
+        throw new Error(`${file} slug must match the filename`);
+      }
+      if (!config.name?.en) {
+        throw new Error(`${file} is missing name.en`);
+      }
+
+      return config;
+    });
+}
+
+async function generateAllQRCodes() {
+  const baseUrl = resolveBaseUrl();
+  const configs = readBusinessConfigs();
+
+  fs.rmSync(outputBaseDir, { recursive: true, force: true });
+  fs.mkdirSync(outputBaseDir, { recursive: true });
+
+  console.log("Animated Digital Menu - QR Generator");
+  console.log(`Base URL: ${baseUrl}`);
+  console.log(`Platforms found: ${configs.length}\n`);
+
+  const manifest = {
+    baseUrl,
+    platforms: [],
+  };
+
+  for (const config of configs) {
+    const slug = config.slug;
+    const businessName = config.name.en;
+    const color = /^#[0-9a-fA-F]{6}$/.test(config.theme?.primary || "")
+      ? config.theme.primary
+      : "#18181B";
+    const clientOutputDir = path.join(outputBaseDir, slug);
+    fs.mkdirSync(clientOutputDir, { recursive: true });
+
+    const menuUrl = buildMenuUrl(baseUrl, slug);
+    const qrSvg = `/qr-codes/${slug}/${slug}.svg`;
+    const qrPng = `/qr-codes/${slug}/${slug}.png`;
+
+    await writeQrAssets(
+      menuUrl,
+      path.join(clientOutputDir, `${slug}.svg`),
+      path.join(clientOutputDir, `${slug}.png`),
+      {
+        businessName,
+        detail: getDisplayPath(menuUrl),
+        color,
+      }
+    );
+
+    manifest.platforms.push({
+      slug,
+      name: businessName,
+      whatsappNumber: config.whatsappNumber,
+      url: menuUrl,
+      svg: qrSvg,
+      png: qrPng,
+    });
+
+    console.log(`${businessName} (${slug})`);
+    console.log(`  QR: ${menuUrl}`);
+  }
+
+  fs.writeFileSync(
+    path.join(outputBaseDir, "manifest.json"),
+    `${JSON.stringify(manifest, null, 2)}\n`,
+    "utf8"
+  );
+
+  console.log(`\nQR codes written to ${outputBaseDir}`);
+}
+
+generateAllQRCodes().catch((error) => {
+  console.error("QR generation failed:", error);
   process.exit(1);
 });

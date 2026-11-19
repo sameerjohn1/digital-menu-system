@@ -7,19 +7,19 @@ export function FaqSection() {
   const faqs = [
     {
       q: "Do my restaurant guests need to download an app or register?",
-      a: "No! Guests simply open their phone camera, point it at the table QR code, and the menu opens immediately in their mobile browser in under one second.",
+      a: "No! Guests simply open their phone camera, point it at the platform QR code, and that platform's menu opens immediately in their mobile browser in under one second.",
     },
     {
       q: "How does my kitchen receive orders?",
-      a: "When a customer completes their selection and taps 'Order on WhatsApp', WhatsApp opens on their device with an automatically formatted message detailing Table #, items, variants, special instructions, and total sum. They press send, and it arrives directly in your kitchen's WhatsApp.",
+      a: "When a customer completes their selection and taps 'Order on WhatsApp', WhatsApp opens on their device with an automatically formatted message detailing items, variants, special instructions, and total sum. They press send, and it arrives directly in your kitchen's WhatsApp.",
     },
     {
       q: "Do you take any commission from our food sales?",
       a: "Never. We charge a flat setup and optional maintenance fee. 100% of order revenue goes directly to your restaurant without any middleman cuts.",
     },
     {
-      q: "How do table QR codes work?",
-      a: "We generate unique printable QR codes for each table (e.g. Table 1, Table 2). When scanned, the URL embeds the table number (?table=5), which is automatically prefilled in the guest's WhatsApp message.",
+      q: "How do platform QR codes work?",
+      a: "Each platform gets exactly one printable QR code that opens its own menu directly. If a menu link is manually opened with ?table=5, that table number is also added to the guest's WhatsApp message.",
     },
     {
       q: "Can we support Urdu and English simultaneously?",

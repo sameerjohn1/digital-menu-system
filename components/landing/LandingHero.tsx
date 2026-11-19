@@ -47,7 +47,7 @@ export function LandingHero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 text-lg sm:text-xl text-zinc-600 dark:text-zinc-300 max-w-2xl mx-auto leading-relaxed"
         >
-          Say goodbye to expensive paper menus and 30% delivery app fees. Give your guests a high-speed, animated mobile menu with table QR tracking and direct kitchen WhatsApp orders.
+          Say goodbye to expensive paper menus and 30% delivery app fees. Give every platform one high-speed, animated QR menu with direct kitchen WhatsApp orders.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -93,7 +93,7 @@ export function LandingHero() {
           </div>
           <div className="flex items-center gap-1.5">
             <QrCode className="w-4 h-4 text-[#C8553D]" />
-            <span>Table QR Tracking</span>
+            <span>One QR Per Platform</span>
           </div>
           <div className="flex items-center gap-1.5">
             <ShieldCheck className="w-4 h-4 text-emerald-500" />

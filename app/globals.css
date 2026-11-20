@@ -63,3 +63,24 @@ body {
   background-size: 200% 100%;
   animation: shimmer 1.8s infinite;
 }
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-72px);
+    opacity: 0;
+  }
+
+  15%,
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(72px);
+    opacity: 0;
+  }
+}
+
+.animate-scanline {
+  animation: scanline 2.4s ease-in-out infinite;
+}

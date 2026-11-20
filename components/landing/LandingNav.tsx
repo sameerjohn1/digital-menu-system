@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Utensils, Phone, ScanLine, QrCode } from "lucide-react";
+import { Utensils, Phone, ScanLine, QrCode, LayoutGrid } from "lucide-react";
 
 export function LandingNav() {
   return (
@@ -39,10 +39,11 @@ export function LandingNav() {
           </Link>
 
           <Link
-            href="/menu/demo-cafe"
-            className="text-xs sm:text-sm font-bold text-zinc-700 dark:text-zinc-300 hover:text-[#C8553D] dark:hover:text-[#D4A24C] transition-colors"
+            href="/platforms"
+            className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-zinc-700 dark:text-zinc-300 hover:text-[#C8553D] dark:hover:text-[#D4A24C] transition-colors"
           >
-            Live Demo
+            <LayoutGrid className="h-3.5 w-3.5 text-[#C8553D] dark:text-[#D4A24C]" />
+            <span>Platforms</span>
           </Link>
 
           <a

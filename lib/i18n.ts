@@ -55,6 +55,16 @@ export interface TranslationStrings {
   platformName: string;
   close: string;
   backToMenu: string;
+  qrScannerTitle: string;
+  qrScannerSubtitle: string;
+  qrScannerBadge: string;
+  qrScanning: string;
+  qrScanned: string;
+  qrSimulateScan: string;
+  qrScanAgain: string;
+  qrDownload: string;
+  qrOpenGallery: string;
+  qrDestination: string;
 }
 
 export const translations: Record<Language, TranslationStrings> = {
@@ -113,6 +123,16 @@ export const translations: Record<Language, TranslationStrings> = {
     platformName: "Animated Digital Menu Platform",
     close: "Close",
     backToMenu: "Back to Menu",
+    qrScannerTitle: "Scan to open this menu",
+    qrScannerSubtitle: "Point your phone camera at the code. No app or typing needed.",
+    qrScannerBadge: "Menu QR",
+    qrScanning: "Scanning code...",
+    qrScanned: "Menu ready on your phone",
+    qrSimulateScan: "Simulate scan",
+    qrScanAgain: "Scan again",
+    qrDownload: "Download QR",
+    qrOpenGallery: "QR Gallery",
+    qrDestination: "Opens this menu",
   },
   ur: {
     tableBadge: "میز نمبر",
@@ -169,5 +189,15 @@ export const translations: Record<Language, TranslationStrings> = {
     platformName: "اینیمیٹڈ ڈیجیٹل مینو پلیٹ فارم",
     close: "بند کریں",
     backToMenu: "مینو کی طرف",
+    qrScannerTitle: "مینو کھولنے کے لیے اسکین کریں",
+    qrScannerSubtitle: "اپنے فون کے کیمرے کو کوڈ پر رکھیں۔ کسی ایپ یا ٹائپنگ کی ضرورت نہیں۔",
+    qrScannerBadge: "مینو QR",
+    qrScanning: "کوڈ اسکین ہو رہا ہے...",
+    qrScanned: "مینو آپ کے فون پر تیار ہے",
+    qrSimulateScan: "اسکین کی نقل کریں",
+    qrScanAgain: "دوبارہ اسکین کریں",
+    qrDownload: "QR ڈاؤن لوڈ کریں",
+    qrOpenGallery: "QR گیلری",
+    qrDestination: "یہ مینو کھلتا ہے",
   },
 };

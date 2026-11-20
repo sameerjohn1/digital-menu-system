@@ -15,14 +15,8 @@ export function LandingFooter() {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-5 text-xs text-zinc-500 dark:text-zinc-400 font-medium">
-          <Link href="/menu/demo-cafe" className="hover:text-zinc-900 dark:hover:text-white">
-            The Artisan Roast Café
-          </Link>
-          <Link href="/menu/royal-bbq" className="hover:text-zinc-900 dark:hover:text-white">
-            Royal BBQ House
-          </Link>
-          <Link href="/menu/firestone-pizza" className="hover:text-zinc-900 dark:hover:text-white">
-            Firestone Pizza House
+          <Link href="/platforms" className="hover:text-zinc-900 dark:hover:text-white">
+            All Platforms
           </Link>
           <Link href="/qr-codes" className="font-bold text-emerald-600 dark:text-emerald-400 hover:underline">
             Platform QR Gallery

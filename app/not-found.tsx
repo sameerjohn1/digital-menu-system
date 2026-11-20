@@ -22,11 +22,11 @@ export default function NotFound() {
 
       <div className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-sm">
         <Link
-          href="/menu/demo-cafe"
+          href="/platforms"
           className="w-full sm:w-auto flex-1 py-3 px-5 rounded-xl font-bold text-sm bg-[#C8553D] hover:bg-[#B04630] text-white shadow-md transition-all active:scale-95 flex items-center justify-center gap-2"
         >
           <Sparkles className="w-4 h-4" />
-          <span>View Demo Café</span>
+          <span>Browse Platforms</span>
         </Link>
 
         <Link

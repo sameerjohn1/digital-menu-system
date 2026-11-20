@@ -15,6 +15,7 @@ import { SearchModal } from "./SearchModal";
 import { CartBar } from "./CartBar";
 import { CartSheet } from "./CartSheet";
 import { RestaurantFooter } from "./RestaurantFooter";
+import { PlatformQrCard } from "./PlatformQrCard";
 
 interface ClientMenuWrapperProps {
   restaurant: RestaurantConfig;
@@ -161,6 +162,10 @@ export function ClientMenuWrapper({ restaurant }: ClientMenuWrapperProps) {
               </section>
             );
           })}
+        </div>
+
+        <div className="max-w-2xl mx-auto px-4 mt-10">
+          <PlatformQrCard restaurant={restaurant} lang={lang} />
         </div>
 
         {/* 6. Footer info */}

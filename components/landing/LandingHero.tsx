@@ -58,10 +58,10 @@ export function LandingHero() {
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto"
         >
           <Link
-            href="/menu/demo-cafe"
+            href="/platforms"
             className="w-full sm:w-auto px-7 py-4 rounded-2xl bg-[#C8553D] hover:bg-[#B04630] text-white font-bold text-base shadow-xl shadow-[#C8553D]/25 transition-all active:scale-95 flex items-center justify-center gap-2 group"
           >
-            <span>Experience Live Demo</span>
+            <span>Explore Platforms</span>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </Link>
 

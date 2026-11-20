@@ -1,11 +1,11 @@
 {
-  "baseUrl": "https://animated-menu.pages.dev",
+  "baseUrl": "https://digital-menu-system-lime.vercel.app",
   "platforms": [
     {
       "slug": "demo-cafe",
       "name": "The Artisan Roast Café & Bakery",
       "whatsappNumber": "923001234567",
-      "url": "https://animated-menu.pages.dev/menu/demo-cafe",
+      "url": "https://digital-menu-system-lime.vercel.app/menu/demo-cafe",
       "svg": "/qr-codes/demo-cafe/demo-cafe.svg",
       "png": "/qr-codes/demo-cafe/demo-cafe.png"
     },
@@ -13,7 +13,7 @@
       "slug": "firestone-pizza",
       "name": "Firestone Pizza House",
       "whatsappNumber": "923007773322",
-      "url": "https://animated-menu.pages.dev/menu/firestone-pizza",
+      "url": "https://digital-menu-system-lime.vercel.app/menu/firestone-pizza",
       "svg": "/qr-codes/firestone-pizza/firestone-pizza.svg",
       "png": "/qr-codes/firestone-pizza/firestone-pizza.png"
     },
@@ -21,7 +21,7 @@
       "slug": "royal-bbq",
       "name": "Royal BBQ House",
       "whatsappNumber": "923008889911",
-      "url": "https://animated-menu.pages.dev/menu/royal-bbq",
+      "url": "https://digital-menu-system-lime.vercel.app/menu/royal-bbq",
       "svg": "/qr-codes/royal-bbq/royal-bbq.svg",
       "png": "/qr-codes/royal-bbq/royal-bbq.png"
     }
